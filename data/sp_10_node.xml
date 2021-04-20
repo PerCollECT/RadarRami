@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp10" 
+            title="Absorption by object parts" 
+            adBlock="Signal propagation" 
+            description="" 
+            references="
+                [r1, https://ieeexplore.ieee.org/document/7413455]
+                [sp4, [5]]"
+            placementParentId="sp4"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./sp_13_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./e_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

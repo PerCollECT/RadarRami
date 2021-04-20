@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp3" 
+            title="Reflection by atm. aerosol" 
+            adBlock="Signal propagation" 
+            description="" 
+            references="[sp18, https://ieeexplore.ieee.org/document/1456992]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./sp_6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_8_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./e_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

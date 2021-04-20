@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="r3" 
+            title="Sensitivity of receiver" 
+            adBlock="Reception" 
+            description="" 
+            references="[pp1, https://ieeexplore.ieee.org/document/4540695]"
+            designParameterCause="true"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+</basic_node>

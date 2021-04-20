@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="fi1" 
+            title="False negative features" 
+            adBlock="Feature identification" 
+            description="" 
+            references="[oi1, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]"
+            placementParentId="oi1"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./di_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

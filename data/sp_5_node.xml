@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp5" 
+            title="Abscence of other mirroring surfaces" 
+            adBlock="Signal propagation" 
+            description="" 
+            references="[sp1, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+</basic_node>

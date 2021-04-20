@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp6" 
+            title="Density of atm. aerosol" 
+            adBlock="Signal propagation" 
+            description="" 
+            references="
+                [sp2, https://ieeexplore.ieee.org/document/1456992]
+                [sp3, https://ieeexplore.ieee.org/document/1456992]"
+            placementParentId="sp2"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+</basic_node>

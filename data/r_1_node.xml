@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="r1" 
+            title="Low received power from object" 
+            adBlock="Reception" 
+            description="" 
+            references="[pp1, [5]]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./sp_9_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_18_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

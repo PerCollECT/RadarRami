@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp17" 
+            title="Pose of object parts" 
+            adBlock="Signal propagation" 
+            description="" 
+            references="[sp11, https://ieeexplore.ieee.org/document/8569423]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+</basic_node>

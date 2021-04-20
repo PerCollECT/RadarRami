@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp1" 
+            title="Not distinguishable from noise floor" 
+            adBlock="Pre-processing" 
+            description="" 
+            references="[di1, [5]]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./r_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />  
+    <xi:include href="./r_2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./r_3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

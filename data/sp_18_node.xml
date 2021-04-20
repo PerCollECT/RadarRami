@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp18" 
+            title="Attenuation by atmospheric aerosol" 
+            adBlock="Signal propagation" 
+            description="The sensor signal can be attenuated during its propagation through the atmosphere by aerosols such as rain, snow, fog, dust etc." 
+            references="[r1, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./sp_2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp_3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>
