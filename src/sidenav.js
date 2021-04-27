@@ -4,10 +4,10 @@
  * Adds links based on tree element to side bar navigation.
  */
 function addSideNavLinks() {
-    let tree = $.parseXML(getDataFromSessionStorage("genericGroveTree"));
+    let tree = $.parseXML(getDataFromSessionStorage("radarRamiTree"));
     if (!tree) return;
 
-    let adBlocks = JSON.parse(getDataFromSessionStorage("genericGroveAdBlocks"));
+    let adBlocks = JSON.parse(getDataFromSessionStorage("radarRamiAdBlocks"));
     if (!adBlocks) return;
 
     adBlocks.forEach(function (d) {
@@ -35,7 +35,7 @@ function addSideNavLinks() {
 
         // add listener
         btn.on("click", function () {
-            let localALinks = JSON.parse(getDataFromSessionStorage("genericGroveActiveLinks"));
+            let localALinks = JSON.parse(getDataFromSessionStorage("radarRamiActiveLinks"));
             if (!localALinks) return;
 
             this.classList.toggle("active");
@@ -50,11 +50,11 @@ function addSideNavLinks() {
                 dropdownContent.style.display = "block";
                 localALinks.push(this.innerText);
             }
-            keepDataInSessionStorage("genericGroveActiveLinks", JSON.stringify(localALinks));
+            keepDataInSessionStorage("radarRamiActiveLinks", JSON.stringify(localALinks));
         });
 
         // set currently active links
-        let aLinks = JSON.parse(getDataFromSessionStorage("genericGroveActiveLinks"));
+        let aLinks = JSON.parse(getDataFromSessionStorage("ActiveLinks"));
         if (!aLinks) return;
         if (aLinks.includes(btn.text())) {
             btn.next().css("display", "block");
