@@ -4,10 +4,10 @@
  * Adds links based on tree element to side bar navigation.
  */
 function addSideNavLinks() {
-    let tree = $.parseXML(getDataFromSessionStorage("tree"));
+    let tree = $.parseXML(getDataFromSessionStorage("genericGroveTree"));
     if (!tree) return;
 
-    let adBlocks = JSON.parse(getDataFromSessionStorage("adBlocks"));
+    let adBlocks = JSON.parse(getDataFromSessionStorage("genericGroveAdBlocks"));
     if (!adBlocks) return;
 
     adBlocks.forEach(function (d) {
@@ -35,7 +35,7 @@ function addSideNavLinks() {
 
         // add listener
         btn.on("click", function () {
-            let localALinks = JSON.parse(getDataFromSessionStorage("activeLinks"));
+            let localALinks = JSON.parse(getDataFromSessionStorage("genericGroveActiveLinks"));
             if (!localALinks) return;
 
             this.classList.toggle("active");
@@ -50,11 +50,11 @@ function addSideNavLinks() {
                 dropdownContent.style.display = "block";
                 localALinks.push(this.innerText);
             }
-            keepDataInSessionStorage("activeLinks", JSON.stringify(localALinks));
+            keepDataInSessionStorage("genericGroveActiveLinks", JSON.stringify(localALinks));
         });
 
         // set currently active links
-        let aLinks = JSON.parse(getDataFromSessionStorage("activeLinks"));
+        let aLinks = JSON.parse(getDataFromSessionStorage("genericGroveActiveLinks"));
         if (!aLinks) return;
         if (aLinks.includes(btn.text())) {
             btn.next().css("display", "block");

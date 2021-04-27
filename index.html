@@ -108,25 +108,25 @@
     }
 
     // parse data only if tree not loaded already
-    if (getDataFromSessionStorage("tree") === null) {
+    if (getDataFromSessionStorage("radarRamiTree") === null) {
       let parsedData = parseTree(dataHost, dataDict, xmlRootFile);
       if(!parsedData.length) throw new Error("index.js: Data error");
 
       initTreeModel(parsedData);       
       let serializedTree = new XMLSerializer().serializeToString(parsedData[0]);
-      keepDataInSessionStorage("tree", serializedTree);
-      keepDataInSessionStorage("additionalTreePairs", JSON.stringify(parsedData[1]));
+      keepDataInSessionStorage("radarRamiTree", serializedTree);
+      keepDataInSessionStorage("radarRamiAadditionalTreePairs", JSON.stringify(parsedData[1]));
     }
 
     // get adBlock data if not already exists
-    if (getDataFromSessionStorage("adBlocks") === null) {
+    if (getDataFromSessionStorage("radarRamiAdBlocks") === null) {
       let adBlocks = getAdBlocks();
-      keepDataInSessionStorage("adBlocks", JSON.stringify(adBlocks));
+      keepDataInSessionStorage("radarRamiAdBlocks", JSON.stringify(adBlocks));
     }
 
     // handle active links of side bar
-    if (getDataFromSessionStorage("activeLinks") === null || window.location.href == homePath) {
-      keepDataInSessionStorage("activeLinks", JSON.stringify([]));
+    if (getDataFromSessionStorage("radarRamiActiveLinks") === null || window.location.href == homePath) {
+      keepDataInSessionStorage("radarRamiActiveLinks", JSON.stringify([]));
     }
 
     // manage page content
