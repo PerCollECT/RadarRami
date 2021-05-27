@@ -7,6 +7,7 @@
             references="
                 [sp2, https://ieeexplore.ieee.org/document/1456992]
                 [sp3, https://ieeexplore.ieee.org/document/1456992]"
+            systemIndependentCause="true"
             placementParentId="sp3"
             xmlns:xi="http://www.w3.org/2003/XInclude">
 </basic_node>

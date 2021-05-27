@@ -5,6 +5,7 @@
             adBlock="Signal propagation" 
             description="" 
             references="[sp2, https://ieeexplore.ieee.org/document/1456992]"
+            systemIndependentCause="true"
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude">
 </basic_node>
