@@ -8,7 +8,7 @@
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude">
 
-    <xi:include href="./r_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />  
-    <xi:include href="./r_2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
-    <xi:include href="./r_3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./r1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />  
+    <xi:include href="./r2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./r3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 </basic_node>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
-            id="oi2" 
-            title="False positive in object list" 
+            id="oi3" 
+            title="Object class error" 
             adBlock="Object identification" 
-            description="" 
+            description="Error in determination of the object class." 
             references=""
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude"> 

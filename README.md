@@ -22,7 +22,7 @@ Each node in the tree, effect or cause, contains a name, a unique identifier, an
 PerCollECT is based on a [tree structure](https://en.wikipedia.org/wiki/Tree_(data_structure)). Each node is represented by an xml file. Relations between nodes (called links) are set by adding a parent-child relation.<br>
 The following shows a simple example of relations between node _pp1_ (parent) and node _r1_, node _r2_ and node _r3_ (children):
 
-`pp_1_node.xml` example
+`pp1_node.xml` example
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node> id="pp1"
@@ -34,16 +34,16 @@ The following shows a simple example of relations between node _pp1_ (parent) an
 
     <!-- parent-child relations. Add link to child node xml-file here: -->
     <!-- add node r1 as child -->
-    <xi:include href="./r_1_node.xml" ... />  
+    <xi:include href="./r1_node.xml" ... />  
     <!-- add node r2 as child -->
-    <xi:include href="./r_2_node.xml" ... />
+    <xi:include href="./r2_node.xml" ... />
     <!-- add node r3 as child -->
-    <xi:include href="./r_3_node.xml" ... />
+    <xi:include href="./r3_node.xml" ... />
 
 </basic_node>
 ```
 
-`r_1_node.xml` example
+`r1_node.xml` example
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node> id="r1" 
@@ -64,8 +64,8 @@ The xml files follow the xsd schema files defined in `data/schema`. <br>
 Note: The parser does not validate against the xsd schema at the moment.
 
 **Naming convention**
-  * Node file: _first-letter-of-block_ _ _no_ _node.xml. Example: Reception block node 1 `r_1_node.xml`
-  * Node id: Similar to file name. `r_1_node.xml` &#8594; `r1`
+  * Node file: _first-letter-of-block_ _ _no_ _node.xml. Example: Reception block node 1 `r1_node.xml`
+  * Node id: Similar to file name. `r1_node.xml` &#8594; `r1`
 
 ### How to extend the data structure
 
