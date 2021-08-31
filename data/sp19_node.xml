@@ -5,8 +5,9 @@
             adBlock="Signal propagation" 
             description="The sensor signal is reflected by multiple object parts within the scene." 
             references="
-                [di2, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, mirror reflections]
-                [di3, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, mirror reflections]"
+                [di2, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]
+                [di3, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]
+                [di7, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]"
             placementParentId="di2"
             xmlns:xi="http://www.w3.org/2003/XInclude">
 
