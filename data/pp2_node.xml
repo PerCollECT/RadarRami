@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp2" 
+            title="Aliasing" 
+            adBlock="Pre-processing" 
+            description="Aliasing effects in FFTs leading to ambiguous measurements" 
+            references="
+                [pp3, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2]
+                [pp4, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2]"
+            designParameterCause="true"
+            placementParentId="pp3"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+</basic_node>

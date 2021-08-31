@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="fi1" 
-            title="False negative features" 
+            title="False negative feature" 
             adBlock="Feature identification" 
             description="" 
             references="[oi4, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]"
