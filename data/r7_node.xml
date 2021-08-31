@@ -3,7 +3,7 @@
             id="r7" 
             title="Number of virtual reception antennas" 
             adBlock="Reception" 
-            description="Number of virtual antennas of a MIMO antenna array" 
+            description="Number of virtual antennas in a MIMO antenna array" 
             references="[pp7, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]"
             designParameterCause="true"
             placementParentId="pp7"
