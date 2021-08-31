@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi6" 
+            title="Object position error" 
+            adBlock="Object identification" 
+            description="The identified object is located at a wrong position" 
+            references="[oi2, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>
