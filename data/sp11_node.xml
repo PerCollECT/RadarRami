@@ -7,7 +7,7 @@
             references=" 
                 [r1, https://publikationen.bibliothek.kit.edu/24298]
                 [sp4, https://ieeexplore.ieee.org/document/7413455]
-                [di2, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, multi-path reflections]"
+                [sp19, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, multi-path reflections]"
             placementParentId="sp4"
             xmlns:xi="http://www.w3.org/2003/XInclude">
 

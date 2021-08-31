@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp19" 
+            title="Multi-path reflection by multiple object parts" 
+            adBlock="Signal propagation" 
+            description="The sensor signal is reflected by multiple object parts within the scene." 
+            references="[di2, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, mirror reflections]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./sp11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>
