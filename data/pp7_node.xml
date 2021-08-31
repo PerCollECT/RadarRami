@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp7" 
+            title="Angle resolution" 
+            adBlock="Pre-processing" 
+            description="Resolution of angle measurement after FFT" 
+            references="[di6, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]"
+            placementParentId="di6"
+            designParameterCause="true"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <xi:include href="./r6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./r7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>
