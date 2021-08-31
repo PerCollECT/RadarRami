@@ -6,7 +6,8 @@
             description="" 
             references=" 
                 [r1, https://publikationen.bibliothek.kit.edu/24298]
-                [sp4, https://ieeexplore.ieee.org/document/7413455]"
+                [sp4, https://ieeexplore.ieee.org/document/7413455]
+                [sp19, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved]"
             placementParentId="sp4"
             xmlns:xi="http://www.w3.org/2003/XInclude">
 
