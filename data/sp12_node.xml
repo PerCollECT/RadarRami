@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp12" 
-            title="Signal distance in atm. aerosol" 
+            title="Signal distance in atm. particle volume" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Distance of electromagnetic wave travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors." 
             references="[sp2, https://ieeexplore.ieee.org/document/1456992]"
             systemIndependentCause="true"
             placementParentId=""

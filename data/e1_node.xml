@@ -3,7 +3,7 @@
             id="e1" 
             title="Emitter wavelength" 
             adBlock="Emission" 
-            description="" 
+            description="Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength]." 
             references="
                 [sp2, https://ieeexplore.ieee.org/document/1456992]
                 [sp3, https://ieeexplore.ieee.org/document/1456992]

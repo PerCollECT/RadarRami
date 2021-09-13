@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp7" 
-            title="Material properties of atm. aerosol particles" 
+            title="Refractive index of atm. particles" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter." 
             references="
                 [sp2, https://ieeexplore.ieee.org/document/1456992]
                 [sp3, https://ieeexplore.ieee.org/document/1456992]"

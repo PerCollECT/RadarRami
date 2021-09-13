@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp9" 
-            title="Transmittance by object parts" 
+            title="Transmittance and refraction by object parts" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Object parts transmitting portions of the electromagnetic wave. Transmittance, building on refraction, being expressed by Bidirectional Transmittance Distribution Function (BTDF)." 
             references="[r1, https://ieeexplore.ieee.org/document/7413455]"
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude">

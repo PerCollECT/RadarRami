@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp8" 
-            title="Size of atm. aerosol particles" 
+            title="Size of atm. particles" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Geometric size of atmospheric particles." 
             references="
                 [sp2, https://ieeexplore.ieee.org/document/1456992]
                 [sp3, https://ieeexplore.ieee.org/document/1456992]"
