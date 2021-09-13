@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp11" 
-            title="Reflection by object parts" 
+            title="Specular/diffuse reflection by object parts" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Object parts reflecting portions of the electromagnetic wave. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF)." 
             references=" 
                 [r1, https://publikationen.bibliothek.kit.edu/24298]
                 [sp4, https://ieeexplore.ieee.org/document/7413455]

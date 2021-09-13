@@ -3,7 +3,7 @@
             id="r3" 
             title="Sensitivity of receiver" 
             adBlock="Reception" 
-            description="" 
+            description="Lowest possible receiving power at the receiver with which the radar still detects a target." 
             references="[pp1, https://ieeexplore.ieee.org/document/4540695]"
             designParameterCause="true"
             placementParentId="pp1"

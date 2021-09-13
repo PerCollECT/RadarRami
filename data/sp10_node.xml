@@ -3,7 +3,7 @@
             id="sp10" 
             title="Absorption by object parts" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Object parts absorbing portions of the electromagnetic wave. Hence, converting incoming light engery into kinetic and thermal energy." 
             references="
                 [r1, https://ieeexplore.ieee.org/document/7413455]
                 [sp4, https://tuprints.ulb.tu-darmstadt.de/17545/]"

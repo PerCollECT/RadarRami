@@ -3,7 +3,7 @@
             id="r1" 
             title="Low received power from object" 
             adBlock="Reception" 
-            description="" 
+            description="Electromagnetic wave which is reflected by object of interest contain low radiation power when returning to the receiving antenna." 
             references="[pp1, https://tuprints.ulb.tu-darmstadt.de/17545/]"
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude">

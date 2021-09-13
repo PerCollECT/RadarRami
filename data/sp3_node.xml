@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp3" 
-            title="Reflection by atm. aerosol" 
+            title="Scattering by atm. particles" 
             adBlock="Signal propagation" 
-            description="" 
+            description="Scattering of electromagnetic wave by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any engery but scattering incoming electromagnetic waves." 
             references="[sp18, https://ieeexplore.ieee.org/document/1456992]"
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude">

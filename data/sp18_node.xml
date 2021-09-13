@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp18" 
-            title="Attenuation by atmospheric aerosol" 
+            title="Attenuation by atm. aerosol particles and accumulated hydrometeors" 
             adBlock="Signal propagation" 
-            description="The sensor signal can be attenuated during its propagation through the atmosphere by aerosols such as rain, snow, fog, dust etc." 
+            description="Attenuation of electromagnetic wave due to scattering and absorption by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In: Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of attenuation by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126] [Titel anhand dieser DOI in Citavi-Projekt übernehmen] . Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others." 
             references="[r1, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf]"
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude">
