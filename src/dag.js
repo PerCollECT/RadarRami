@@ -91,6 +91,7 @@ function initGraph() {
       .data(dag.descendants())
       .enter()
       .append("g")
+      .attr("class", "node")
       .attr("transform", ({ x, y }) => `translate(${x}, ${y})`);
   
     // Plot nodes
@@ -112,6 +113,21 @@ function initGraph() {
       .on("click", onTreeNodeClicked);
       //.call(wrapNodeText, maxTextLength)
       //.style("fill-opacity", 1e-6)
+    
+    // Add information icon
+    nodes.append("circle")
+      .attr("class", "iButton")
+      .attr("cx", nodeWidth)
+      .attr("r", 10)
+      .on("mouseover", function () { d3.select(this).attr("r", 15); })
+      .on("mouseout", function () { d3.select(this).attr("r", 10); })
+      .on("click", onTreeInfoClicked);
+
+    nodes.append("text")
+      .attr("class", "iText")
+      .attr("y", 6.5)
+      .attr("x", nodeWidth - (5 / 2))
+      .html("i");
   };
 
 /**
@@ -141,6 +157,23 @@ function initGraph() {
   data = JSON.parse(allText);
 
   return data;
+ }
+
+
+ let currentInfoboxNode = null;
+ /**
+  * Performs action after the info label is clicked
+  * @param {Object} d clicked info
+  */
+ function onTreeInfoClicked(d) {
+    currentInfoboxNode = d;
+    let node = getNodeByTitle(d.currentTarget.__data__.data.title);
+    $("#info_box").empty();
+    addNodeInfos(node, "preview");
+    document.getElementById("preview").scrollIntoView({ behavior: 'smooth' });
+    //event.stopPropagation();
+    collapseTreeTable();
+    //updateTreePlot(d);
  }
 
 /**
