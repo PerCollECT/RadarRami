@@ -169,12 +169,12 @@ function addLegend() {
 function jumpToSearch() {
   let search = $("#search_input").val();
   if (!search) return;
-
+  navLink(search);
   // prepare string
-  search = search.trim().toLowerCase();
+  /*search = search.trim().toLowerCase();
   search = search.replace(/\s{2,}/g, ' ');
   search = search.replace(/[^A-Z0-9]/ig, "_");
-  window.location.hash = search;
+  window.location.hash = search;*/
 }
 
 /**
