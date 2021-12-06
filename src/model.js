@@ -37,11 +37,11 @@ function prepareTreeData(tree, additionalTreePairs) {
  * @param {Object} node to add a additional parent to
  * @param {Object} parent of the node
  */
-function connectMultiParentNode(allNodes, node, parent) {
+/*function connectMultiParentNode(allNodes, node, parent) {
     let couplingId = getUniqueId();
     let counter = 0;
     allNodes.forEach(function (n) {
-        if (n.getAttribute("id") == node || n.getAttribute("id") == parent) {
+        if (n.id == node || n.getAttribute("id") == parent) {
             if (n.hasAttribute("coupling_id")) {
                 let coupling = n.getAttribute("coupling_id");
                 let alreadyIncluded = coupling.split(",").includes(couplingId);
@@ -60,19 +60,19 @@ function connectMultiParentNode(allNodes, node, parent) {
     if (counter != 2) {
         showWarningMsg("model.js: Coupling elements failed")
     }
-}
+}*/
 
 /**
- * Gets an array of different adBlock attribute in tree
- * @returns array with adBlock attributes
+ * Gets an array of different decomBlock attribute in tree
+ * @returns array with decomBlock attributes
  */
-function getAdBlocks() {
-    let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+function getdecomBlocks() {
+    let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
     if (!tree) return;
     let blocks = [];
-    tree.getElementsByTagName("*").forEach(function (n) {
-        if (!blocks.includes(n.getAttribute("adBlock"))) {
-            blocks.push(n.getAttribute("adBlock"));
+    tree.forEach(function (n) {
+        if (!blocks.includes(n.decomBlock)) {
+            blocks.push(n.decomBlock);
         }
     });
     return blocks;
@@ -96,13 +96,13 @@ function treeIsEmpty(tree) {
  * @returns null if data does not includes node, else node
  */
 function getNodeByTitle(nodeName) {
-    let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+    let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
     if (!tree) return;
 
     let found;
     nodeName = nodeName.toLowerCase().replace(/[^A-Z0-9]/ig, "_");
-    tree.getElementsByTagName("*").forEach(function (elem) {
-        let e = elem.getAttribute("title").toLowerCase().replace(/[^A-Z0-9]/ig, "_");
+    tree.forEach(function (elem) {
+        let e = elem.title.toLowerCase().replace(/[^A-Z0-9]/ig, "_");
         if (e == nodeName) {
             found = elem;
             return;
@@ -117,11 +117,11 @@ function getNodeByTitle(nodeName) {
  * @returns null if data does not includes node, else node
  */
 function getNodeById(nodeId) {
-    let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+    let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
     if (!tree) return;
 
     let found;
-    tree.getElementsByTagName("*").forEach(function (elem) {
+    tree.forEach(function (elem) {
         if (elem.id == nodeId) {
             found = elem;
             return;

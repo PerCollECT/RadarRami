@@ -5,7 +5,7 @@
  * @returns if tree is empty
  */
 function showCurrentContent() {
-  let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+  let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
   if (!tree || treeIsEmpty(tree)) return;
   if (!$("#load_info")) return;
 
@@ -73,7 +73,7 @@ function addNodeInfos(node, id) {
     .appendTo($("#info_box"));
   $('<div></div>')
     .addClass("infoHead")
-    .html(node.getAttribute("title"))
+    .html(node.title)
     .appendTo(infoBox);
 
   let table = document.createElement("table");
@@ -81,7 +81,7 @@ function addNodeInfos(node, id) {
   // show node information
   let attributesToShow = [
     "id",
-    "adBlock",
+    "decomBlock",
     "description",
     "number of parent nodes",
     "number of child nodes",
@@ -92,21 +92,21 @@ function addNodeInfos(node, id) {
 
     switch (a) {
       case "id":
-        value.push([a.toUpperCase(), node.attributes[a].value.replaceAll("\\n", "<br><br>")]);
+        value.push([a.toUpperCase(), node.id.replaceAll("\\n", "<br><br>")]);
         break;
-      case "adBlock":
-        value.push(["Block", node.attributes[a].value.replaceAll("\\n", "<br><br>")]);
+      case "decomBlock":
+        value.push(["Decomposition Block", node.decomBlock.replaceAll("\\n", "<br><br>")]);
         break;
       case "number of parent nodes":
-        value.push([a, getNumberOfParents(node)]);
+        //value.push([a, getNumberOfParents(node)]);
         break;
       case "number of child nodes":
-        value.push([a, getNumberOfChildren(node)]);
+        //value.push([a, getNumberOfChildren(node)]);
         break;
       case "references":
-        value = prepareReferencesInfo(node.attributes[a].value);
+        value = prepareReferencesInfo(node.references);
         value.forEach(function (e) {
-          let nodeName = getNodeById(e[0].replaceAll(/[\s]/g, "")).getAttribute("title");
+          let nodeName = getNodeById(e[0].replaceAll(/[\s]/g, "")).title;
           let link = `${getLinkPath()}#${nodeName.replace(/[^A-Z0-9]/ig, "_").toLowerCase()}`;
           e[0] = `Reference for influence on <a title='${e[0].replaceAll(/[\s]/g, "")}' href='${link}'>${nodeName}</a>`;
           e[1] = `<a href='${e[1].replaceAll(/[\s]/g, "")}' target='_blank'>${e[1].replaceAll(/[\s]/g, "")}</a>`;
@@ -117,7 +117,7 @@ function addNodeInfos(node, id) {
         });
         break;      
       default:
-        value.push([a, node.attributes[a].value.replaceAll("\\n", "<br><br>")]);
+        value.push([a, node[a].replaceAll("\\n", "<br><br>")]);
     }
 
     // caution: using jQuery to create table will cause an error
@@ -185,14 +185,14 @@ function jumpToSearch() {
 function addAutoComplete(input) {
   // TODO switch to jQuery
 
-  let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+  let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
   if (!tree) return;
 
   // collect all nodes names in tree
   let arr = [];
-  tree.getElementsByTagName("*").forEach(function (n) {
-    if (!arr.includes(n.getAttribute("title"))) {
-      arr.push(n.getAttribute("title"));
+  tree.forEach(function (n) {
+    if (!arr.includes(n.title)) {
+      arr.push(n.title);
     }
   })
 
@@ -300,7 +300,7 @@ function addAutoComplete(input) {
  * Adds table to main content
  */
 function addTreeTable() {
-  let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+  let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
   if (!tree) return;
 
   if (!$("#tree_table_collapse")) return;
@@ -322,8 +322,8 @@ function addTreeTable() {
     if(n.id == "root") return;
     let row = new Object();
     row.id = n.id;
-    row.effectName = n.getAttribute("title");
-    row.block = n.getAttribute("adBlock");
+    row.effectName = n.title;
+    row.block = n.decomBlock;
     data.push(row)
   });
 

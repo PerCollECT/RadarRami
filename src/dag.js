@@ -14,12 +14,9 @@ var zoom = d3.zoom()
 });
 
 
-(async () => {
+function initGraph() {
     // fetch data and render
-    const resp = await fetch(
-      "data.json"
-    );
-    const data = await resp.json();
+    data = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
     const dag = d3.dagStratify()(data);
     let maxTextLength = 200;
     let nodeWidth = maxTextLength + 20;
@@ -102,7 +99,8 @@ var zoom = d3.zoom()
       .attr("width", nodeWidth)
       .attr("height", nodeHeight)
       .attr("stroke-width", 1.5)
-      .attr("fill", "#f4f4f9");
+      .attr("fill", "#f4f4f9")
+      .on("click", onTreeNodeClicked);
   
     // Add text to nodes
     nodes
@@ -111,10 +109,50 @@ var zoom = d3.zoom()
       .attr("x", 13)
       .attr("dy", ".35em")
       .text((d) => d.data.title)
+      .on("click", onTreeNodeClicked);
       //.call(wrapNodeText, maxTextLength)
       //.style("fill-opacity", 1e-6)
-      //.on("click", onTreeNodeClicked);
-  })();
-  
+  };
 
-  
+/**
+ * Interface to parse all data starting at
+ * @param {String} host of xml root file
+ * @param {String} dataDict dictionary at domain where the data is located
+ * @param {String} jsonRootFile file name of xml file defines three root
+ */
+ function parseData(host, dataDict, jsonDataFile) {
+  let jsonRootFullPath = (window.location.href.includes("localhost") || window.location.href.includes("127.0.")) ?
+  `./${jsonDataFile}` : `${host}${dataDict}${jsonDataFile}`;
+
+  var rawFile = new XMLHttpRequest();
+  rawFile.open("GET", jsonRootFullPath, false);
+  var allText;
+  rawFile.onreadystatechange = function ()
+  {
+      if(rawFile.readyState === 4)
+      {
+          if(rawFile.status === 200 || rawFile.status == 0)
+          {
+              allText = rawFile.responseText;
+          }
+      }
+  }
+  rawFile.send(null);
+  data = JSON.parse(allText);
+
+  return data;
+ }
+
+/**
+ * Performs action after the a node is clicked
+ * @param {Object} d clicked info
+ */
+ function onTreeNodeClicked(d) {
+  currentInfoboxNode = d;
+  let node = getNodeByTitle(d.currentTarget.__data__.data.title);
+  $("#info_box").empty();
+  addNodeInfos(node, "preview");
+  //d3.event.stopPropagation();
+  collapseTreeTable();
+  //updateTreePlot(d);
+}
