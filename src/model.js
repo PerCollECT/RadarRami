@@ -31,38 +31,6 @@ function prepareTreeData(tree, additionalTreePairs) {
 }
 
 /**
- * Adds additional parent to node by connecting them via 
- * attribute coupling_id
- * @param {*} allNodes of data set
- * @param {Object} node to add a additional parent to
- * @param {Object} parent of the node
- */
-/*function connectMultiParentNode(allNodes, node, parent) {
-    let couplingId = getUniqueId();
-    let counter = 0;
-    allNodes.forEach(function (n) {
-        if (n.id == node || n.getAttribute("id") == parent) {
-            if (n.hasAttribute("coupling_id")) {
-                let coupling = n.getAttribute("coupling_id");
-                let alreadyIncluded = coupling.split(",").includes(couplingId);
-                if (!alreadyIncluded) {
-                    n.setAttribute("coupling_id", [coupling, couplingId]);
-                    ++counter;
-                }
-            }
-            else {
-                n.setAttribute("coupling_id", couplingId);
-                ++counter;
-            }
-        }
-    });
-
-    if (counter != 2) {
-        showWarningMsg("model.js: Coupling elements failed")
-    }
-}*/
-
-/**
  * Gets an array of different decomBlock attribute in tree
  * @returns array with decomBlock attributes
  */

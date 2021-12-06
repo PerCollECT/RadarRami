@@ -34,7 +34,7 @@ function initGraph() {
     layout = d3
       .sugiyama() // base layout
       .decross(d3.decrossTwoLayer().order(d3.twolayerAgg())) // minimize number of crossings
-      .nodeSize((node) => [(node ? 3.6 : 0.25) * nodeWidth, 3 * nodeWidth]); // set node size instead of constraining to fit
+      .nodeSize((node) => [(node ? 3.6 : 0.25) * nodeWidth, 2 * nodeWidth]); // set node size instead of constraining to fit
     const { width, height } = layout(dag);
     
     // --------------------------------
@@ -45,18 +45,8 @@ function initGraph() {
     svgSelection.call(zoom);
     graph = svgSelection.append("g");
     
-    defs = graph.append("defs"); // For gradients
-   
-
-    const steps = dag.size();
-    const interp = d3.interpolateRainbow;
-    const colorMap = new Map();
-    for (const [i, node] of dag.idescendants().entries()) {
-      colorMap.set(node.data.id, interp(i / steps));
-    }
-  
+    defs = graph.append("defs"); // For gradients 
     
-  
     // Plot edges
     graph
       .append("g")

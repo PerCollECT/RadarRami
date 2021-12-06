@@ -289,173 +289,182 @@
   },
   {
     "id": "32",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["25"],
+    "title": "Occlusion by objects",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Objects located in front of other objects preventing reception of power by receiving antenna",
+    "references": "[25, https://ieeexplore.ieee.org/document/8569423]",
     "nodeType": "effect"
   },
   {
     "id": "33",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["49"],
+    "title": "Absorption by atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Absorption of electromganetic wave by particles in atmospheric aerosol and accumulated hydrometeors. Hence, converting incoming engery into kinetic and thermal energy within particles. Absorption cross section being a measure of the probability to absorb an electromagnetic wave by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section",
+    "references": "[49, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "effect"
   },
   {
     "id": "34",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["49"],
+    "title": "Scattering by atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Scattering of electromagnetic wave by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any engery but scattering incoming electromagnetic waves",
+    "references": "[49, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "effect"
   },
   {
     "id": "35",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["32"],
+    "title": "Occlusion by object parts",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "references": "[32, https://publikationen.bibliothek.kit.edu/24298]",
     "nodeType": "effect"
   },
   {
     "id": "36",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["32"],
+    "title": "Abscence of other mirroring surfaces",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "references": "[32, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "37",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["33","34"],
+    "title": "Number concentration of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "description":"Number concentration of atmospheric aerosol particles in regular automotive radar surroundings is high enough to interact measurable with electromagnetic wave. Number concentration of accumulated hydrometeors depending on environmental influences",
+    "references": "[33, https://ieeexplore.ieee.org/document/1456992][34, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "38",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["33","34"],
+    "title": "Refractive index of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "description":"Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter",
+    "references": "[33, https://ieeexplore.ieee.org/document/1456992][34, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "39",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["33","34"],
+    "title": "Size of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "description":"Geometric size of atmospheric particles",
+    "references": "[33, https://ieeexplore.ieee.org/document/1456992][34, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "40",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["25"],
+    "title": "Transmittance and refraction by object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Object parts transmitting portions of the electromagnetic wave. Transmittance, building on refraction, being expressed by Bidirectional Transmittance Distribution Function (BTDF)",
+    "references": "[25, https://ieeexplore.ieee.org/document/7413455",
     "nodeType": "effect"
   },
   {
     "id": "41",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["25","35"],
+    "title": "Absorption by object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Object parts absorbing portions of the electromagnetic wave. Hence, converting incoming light engery into kinetic and thermal energy",
+    "references": "[25, https://ieeexplore.ieee.org/document/7413455][35, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
     "id": "42",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["25","35","50"],
+    "title": "Specular/diffuse reflection by object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Object parts reflecting portions of the electromagnetic wave. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF)",
+    "references": "[25, https://publikationen.bibliothek.kit.edu/24298][35, https://ieeexplore.ieee.org/document/7413455][50, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved]",
     "nodeType": "effect"
   },
   {
     "id": "43",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["33"],
+    "title": "Signal distance in atm. particle volume",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "description":"Distance of electromagnetic wave travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors",
+    "references": "[33, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "44",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["40","41","42"],
+    "title": "Material properties of object parts",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "references": "[40, https://ieeexplore.ieee.org/document/7413455][41, https://publikationen.bibliothek.kit.edu/24298][42, https://ieeexplore.ieee.org/document/7413455]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "45",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["42"],
+    "title": "Object part surface roughness",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "description":"Roughness being a value for the heights and depths of microscopic bumps and holes within a surface",
+    "references": "[42, https://publikationen.bibliothek.kit.edu/24298]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "46",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["42"],
+    "title": "Object part surface texture",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "description":"Object part surface texture describing the macroscopic appearance of the object part surface structure",
+    "references": "[42, https://ieeexplore.ieee.org/document/7413455]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "47",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["42"],
+    "title": "Size of object parts",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "references": "[42, https://ieeexplore.ieee.org/document/7413455]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "48",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["42"],
+    "title": "Pose of object parts",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "references": "[42, https://ieeexplore.ieee.org/document/8569423]",
+    "nodeType": "systemIndependent"
   },
   {
     "id": "49",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["25"],
+    "title": "Attenuation by atm. aerosol particles and accumulated hydrometeors",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Attenuation of electromagnetic wave due to scattering and absorption by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In: Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of attenuation by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
+    "references": "[25, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf]",
     "nodeType": "effect"
   },
   {
     "id": "50",
-    "parentIds": ["31"],
-    "title": "Test Effect",
+    "parentIds": ["1","2","6"],
+    "title": "Multi-path reflection by multiple object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[31, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"The sensor signal is reflected by multiple object parts within the scene",
+    "references": "[1, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][2, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][6, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]",
     "nodeType": "effect"
+  },
+  {
+    "id": "51",
+    "parentIds": ["21"],
+    "title": "Speed of light",
+    "decomBlock": "Signal propagation",
+    "description":"Speed of light in propagation medium",
+    "references": "[21, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limitation of resolution]",
+    "nodeType": "systemIndependent"
   }
 ]
