@@ -5,7 +5,7 @@
     "title": "False negative detection",
     "decomBlock": "Detection identification",
     "description": "Missing detection, compared to an ideally detected surrounding" ,
-    "references": "[2, http://tubiblio.ulb.tu-darmstadt.de/126466/]",
+    "references": "[2, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
@@ -14,7 +14,7 @@
     "title": "Detection position error",
     "decomBlock": "Detection identification",
     "description": "Detection identified at wrong position e.g. due to aliasing or multi-path propagation" ,
-    "references": "[14, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "references": "[14, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
   {
@@ -59,16 +59,16 @@
     "title": "False positive detection",
     "decomBlock": "Detection identification",
     "description": "Additional detection, compared to an ideally detected surrounding" ,
-    "references": "[13, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, for multi-path propagation]",
+    "references": "[13, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, for multi-path propagation]",
     "nodeType": "effect"
   },
   {
     "id": "7",
-    "parentIds": ["33","34","40","41","42","21"],
+    "parentIds": ["33","34","40","41","42","22"],
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
-    "references": " [33, https://ieeexplore.ieee.org/document/1456992] [34, https://ieeexplore.ieee.org/document/1456992] [40, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, https://ieeexplore.ieee.org/document/7413455] [42, https://www.mdpi.com/2072-4292/7/6/7826] [21, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
     "nodeType": "designParameter"
   },
   {
@@ -150,7 +150,7 @@
     "decomBlock": "Object identification",
     "description": "Error in object tracking algorithm e.g. in the transient phases of a filter",
     "references": "[12, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [13, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [14, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [15, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "nodeType": "designParameter"
   },
   {
     "id": "17",
@@ -158,7 +158,7 @@
     "title": "Not distinguishable from noise floor",
     "decomBlock": "Pre-processing",
     "description":"The power received from the reflective surface of the object of interest present in ground truth is mathematically or visually not distinguishable from noise.",
-    "references": "[0, http://tubiblio.ulb.tu-darmstadt.de/126466/]",
+    "references": "[0, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
@@ -229,7 +229,7 @@
     "parentIds": ["17"],
     "title": "Low received power from object",
     "decomBlock": "Reception",
-    "description": "Electromagnetic wave which is reflected by object of interest contain low radiation power when returning to the receiving antenna.",
+    "description": "Electromagnetic wave which is reflected by object of interest contains low radiation power when returning to the receiving antenna.",
     "references": "[17, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
