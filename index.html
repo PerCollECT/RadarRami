@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- include D3 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script-->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- include jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- include table sort lib -->
@@ -19,8 +20,10 @@
   <script src="src/utils.js"></script>
   <script src="src/sidenav.js"></script>
   <script src="src/content.js"></script>
-  <script src="src/xmlParser.js"></script>
-  <script src="src/treePlot.js"></script>
+  <!--script src="src/xmlParser.js"></script>
+  <script src="src/treePlot.js"></script-->
+  <script src="https://unpkg.com/d3-dag@0.8.2"></script>
+  <script src="src/dag.js"></script>
   <script>
     function isIE() {
       let ua = window.navigator.userAgent;
@@ -59,8 +62,9 @@
 
   <!-- content  -->
   <div class="content">
-    <div id="load_info">Loading data...</div>
-    <div id="tree_view"></div>
+    <!--div id="load_info">Loading data...</div-->
+    <!--div id="tree_view"></div-->
+    <svg></svg>
     <div id="legend" class="legend"></div>
     <div id="info_box"></div>
 
@@ -88,7 +92,8 @@
           </div>
         </div>
         <!-- tree content -->
-        <div id="tree_table"></div>
+        <!--div id="tree_table"></div-->
+        <svg></svg>
       </div>
     </div>
 
@@ -108,7 +113,7 @@
     }
 
     // parse data only if tree not loaded already
-    if (getDataFromSessionStorage(repoName + "Tree") === null) {
+    /*if (getDataFromSessionStorage(repoName + "Tree") === null) {
       let parsedData = parseTree(dataHost, dataDict, xmlRootFile);
       if(!parsedData.length) throw new Error("index.js: Data error");
 
@@ -127,10 +132,10 @@
     // handle active links of side bar
     if (getDataFromSessionStorage(repoName + "ActiveLinks") === null || window.location.href == homePath) {
       keepDataInSessionStorage(repoName + "ActiveLinks", JSON.stringify([]));
-    }
+    }*/
 
     // manage page content
-    showCurrentContent();
+    //showCurrentContent();
     addLegend();
     if (window.location.href == homePath) addTreeTable();
     addSideNavLinks();
