@@ -99,8 +99,27 @@ function initGraph() {
       .append("rect")
       .attr("width", nodeWidth)
       .attr("height", nodeHeight)
+      .attr("rx", function (d) {
+        switch (d.data.nodeType) {
+          case "designParameter":
+            return 40;
+          case "systemIndependent":
+            return 40;
+          default:
+            return 2;
+        }
+      })
       .attr("stroke-width", 1.5)
-      .attr("fill", "#f4f4f9")
+      .style("fill", function (d) {
+        switch (d.data.nodeType) {
+          case "designParameter":
+            return "#b4acd2";
+          case "systemIndependent":
+            return "#ace3b5";
+          default:
+            return "#f4f4f9";
+        }
+      })
       .on("click", onTreeNodeClicked);
   
     // Add text to nodes
@@ -110,14 +129,15 @@ function initGraph() {
       .attr("x", 13)
       .attr("dy", ".35em")
       .text((d) => d.data.title)
+      .call(wrapNodeText, maxTextLength)
       .on("click", onTreeNodeClicked);
-      //.call(wrapNodeText, maxTextLength)
       //.style("fill-opacity", 1e-6)
     
     // Add information icon
     nodes.append("circle")
       .attr("class", "iButton")
-      .attr("cx", nodeWidth)
+      .attr("cx", nodeWidth-20)
+      .attr("cy", 20)
       .attr("r", 10)
       .on("mouseover", function () { d3.select(this).attr("r", 15); })
       .on("mouseout", function () { d3.select(this).attr("r", 10); })
@@ -125,8 +145,8 @@ function initGraph() {
 
     nodes.append("text")
       .attr("class", "iText")
-      .attr("y", 6.5)
-      .attr("x", nodeWidth - (5 / 2))
+      .attr("y", 26.5)
+      .attr("x", nodeWidth - 20 - (5 / 2))
       .html("i");
   };
 
@@ -188,4 +208,48 @@ function initGraph() {
   //d3.event.stopPropagation();
   collapseTreeTable();
   //updateTreePlot(d);
+}
+
+/**
+ * Method wraps long labels of nodes into multiple line label
+ * @param {String} text labels
+ * @param {Number} width max width of one line
+ */
+ function wrapNodeText(text, width) {
+  text.each(function (d) {
+      let textd3 = d3.select(this);
+      if (textd3.node().getComputedTextLength() < width) return;
+      //let words = textd3.text().split(new RegExp(/(?<=[.\-_\s+])/)).reverse();
+      let words = textd3.text().split(" ").reverse();
+      // split into lines
+      let word;
+      let line = [];
+      let lineNumber = 0;
+      let lineHeight = 1; // ems
+      let x = textd3.attr('x');
+      let y = textd3.attr('y');
+      let dy = 0;
+      let tspan = textd3.text(null)
+          .append('tspan')
+          .attr('x', x)
+          .attr('y', y)
+          .attr('dy', dy );
+      while (word = words.pop()) {
+          line.push(word);
+          tspan.text(line.join(' '));
+          if (tspan.node().getComputedTextLength() > width) {
+              line.pop();
+              tspan.text(line.join(' '));
+              line = [word];
+              tspan = textd3.append('tspan')
+                  .attr('x', x)
+                  .attr('y', y)
+                  .attr('dy', ++lineNumber * lineHeight + dy + 'em')
+                  .text(word);
+          }
+      }
+      // set new box height
+      let factor = 19 - lineNumber;
+      //d3.select(this.parentNode.childNodes[0]).attr("height", factor * (lineNumber + 1));
+  });
 }
