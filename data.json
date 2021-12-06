@@ -69,7 +69,7 @@
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
     "references": " [33, https://ieeexplore.ieee.org/document/1456992] [34, https://ieeexplore.ieee.org/document/1456992] [40, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, https://ieeexplore.ieee.org/document/7413455] [42, https://www.mdpi.com/2072-4292/7/6/7826] [21, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
-    "nodeType": "effect"
+    "nodeType": "designParameter"
   },
   {
     "id": "8",
