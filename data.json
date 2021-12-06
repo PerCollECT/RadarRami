@@ -1,11 +1,11 @@
 [
   {
     "id": "0",
-    "parentIds": ["2"],
+    "parentIds": ["8"],
     "title": "False negative detection",
     "decomBlock": "Detection identification",
     "description": "Missing detection, compared to an ideally detected surrounding" ,
-    "references": "[2, http://tubiblio.ulb.tu-darmstadt.de/126466/]",
+    "references": "[2, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
@@ -64,7 +64,7 @@
   },
   {
     "id": "7",
-    "parentIds": ["33","34","40","41","42","21"],
+    "parentIds": ["33","34","40","41","42","22"],
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
@@ -150,7 +150,7 @@
     "decomBlock": "Object identification",
     "description": "Error in object tracking algorithm e.g. in the transient phases of a filter",
     "references": "[12, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [13, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [14, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [15, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
-    "nodeType": "effect"
+    "nodeType": "designParameter"
   },
   {
     "id": "17",
@@ -158,7 +158,7 @@
     "title": "Not distinguishable from noise floor",
     "decomBlock": "Pre-processing",
     "description":"The power received from the reflective surface of the object of interest present in ground truth is mathematically or visually not distinguishable from noise.",
-    "references": "[0, http://tubiblio.ulb.tu-darmstadt.de/126466/]",
+    "references": "[0, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
@@ -191,7 +191,7 @@
   {
     "id": "21",
     "parentIds": ["5"],
-    "title": "Range resolution",
+    "title": "Velocity resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of range measurement after FFT",
     "references": "[5, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
@@ -200,7 +200,7 @@
   {
     "id": "22",
     "parentIds": ["5"],
-    "title": "Velocity resolution",
+    "title": "Range resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of velocity measurement after FFT",
     "references": "[5, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
@@ -229,7 +229,7 @@
     "parentIds": ["17"],
     "title": "Low received power from object",
     "decomBlock": "Reception",
-    "description": "Electromagnetic wave which is reflected by object of interest contain low radiation power when returning to the receiving antenna.",
+    "description": "Electromagnetic wave which is reflected by object of interest contains low radiation power when returning to the receiving antenna.",
     "references": "[17, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
