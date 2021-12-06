@@ -1,7 +1,7 @@
 [
   {
     "id": "0",
-    "parentIds": ["2"],
+    "parentIds": ["8"],
     "title": "False negative detection",
     "decomBlock": "Detection identification",
     "description": "Missing detection, compared to an ideally detected surrounding" ,
@@ -191,7 +191,7 @@
   {
     "id": "21",
     "parentIds": ["5"],
-    "title": "Range resolution",
+    "title": "Velocity resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of range measurement after FFT",
     "references": "[5, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
@@ -200,7 +200,7 @@
   {
     "id": "22",
     "parentIds": ["5"],
-    "title": "Velocity resolution",
+    "title": "Range resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of velocity measurement after FFT",
     "references": "[5, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
