@@ -8,7 +8,7 @@ let graph;
 let width = 600, height = 400;
 let maxTextLength = 200;
 let nodeWidth = maxTextLength + 20;
-let nodeHeight = 100;
+let nodeHeight = 140;
 
 // Define the zoom function for the zoomable tree
 var zoom = d3.zoom()
