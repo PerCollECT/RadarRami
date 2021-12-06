@@ -26,7 +26,10 @@ function addSideNavLinks() {
                 // add node
                 let nodeName = n.title.replace(/[^A-Z0-9]/ig, "_").toLowerCase();
                 ddLinks.push(
-                    createLink(n.title, `${getLinkPath()}#${nodeName}`)
+                    $("<a></a>")
+                    .attr("onclick", "navLink('" + n.title + "'," + n.id + ")")
+                    .attr("href", "#")
+                    .html(n.title)
                 );
             }
         });
@@ -99,12 +102,13 @@ function createDropDownContainer(linkArray) {
 
 /**
  * Creates a link element
- * @param {String} name innerHTML of link
- * @param {String} url of link
- * @returns link element
+ * @param {String} title title of node
+ * @param {String} id id of node
  */
-function createLink(name, url) {
-    return $("<a></a>")
-    .attr("href", url)
-    .html(name);
+function navLink(title, id) {
+    let node = getNodeByTitle(title);
+    $("#info_box").empty();
+    addNodeInfos(node, "preview");
+    collapseTreeTable();
+    updateTreePlot(id);
 }
