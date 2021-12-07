@@ -109,8 +109,7 @@ function navLink(title) {
     let node = getNodeByTitle(title);
     $("#info_box").empty();
     addNodeInfos(node, "preview");
-    collapseTreeTable();
-    updateTreePlot(node.id);
+    updateGraphPlot(node.id);
 }
 
 /**

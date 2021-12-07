@@ -1,36 +1,6 @@
 // Skript holds and manages page data
 
 /**
- * Initializes the tree data
- * @param {Object} data array with first element XMLDocument of tree 
- *  and second element additional tree pairs of XMLDocument (additional links).
- */
-function initTreeModel(data) {
-    if (!data.length) {
-        showErrorMsg("model.js: Could not load tree data."
-            + "<br> Check for too much recursion or empty data set")
-        return;
-    }
-    prepareTreeData(data[0], data[1]);
-}
-
-/**
- * Prepares tree data for additional (multi parent) connections
- * @param {Object} node to add to data set
- * @param {Object} parent of node
- */
-function prepareTreeData(tree, additionalTreePairs) {
-    if (!additionalTreePairs || !additionalTreePairs.length || !tree) return;
-
-    // for each pair in additionalTreePairs connect them by attribute coupling_id
-    // to be able to render the connection later on
-    additionalTreePairs.forEach(function (d) {
-        connectMultiParentNode(tree.getElementsByTagName("*"), d[0], d[1]);
-    })
-    return;
-}
-
-/**
  * Gets an array of different decomBlock attribute in tree
  * @returns array with decomBlock attributes
  */
@@ -44,18 +14,6 @@ function getdecomBlocks() {
         }
     });
     return blocks;
-}
-
-/**
- * Checks if tree is empty or not
- * @returns true if not empty, else false
- */
-function treeIsEmpty(tree) {
-    if (!tree) return false;
-    if (!tree.childNodes[0] || !tree.childNodes[0].hasChildNodes()) {
-        return true;
-    }
-    return false;
 }
 
 /**

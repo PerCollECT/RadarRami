@@ -13,7 +13,6 @@ let nodeHeight = 140;
 // Define the zoom function for the zoomable tree
 var zoom = d3.zoom()
       .scaleExtent([1, 10])
-      //.translateExtent([[0, 0], [width, height]])
       .on('zoom', function(event) {
         graph
             .attr('transform', event.transform);
@@ -95,7 +94,7 @@ function initGraph() {
             return "#f4f4f9";
         }
       })
-      .on("click", onTreeNodeClicked);
+      .on("click", onNodeClicked);
   
     // Add text to nodes
     nodes
@@ -105,8 +104,7 @@ function initGraph() {
       .attr("dy", ".35em")
       .text((d) => d.data.title)
       .call(wrapNodeText, maxTextLength)
-      .on("click", onTreeNodeClicked);
-      //.style("fill-opacity", 1e-6)
+      .on("click", onNodeClicked);
     
     // Add information icon
     nodes.append("circle")
@@ -116,7 +114,7 @@ function initGraph() {
       .attr("r", 15)
       .on("mouseover", function () { d3.select(this).attr("r", 20); })
       .on("mouseout", function () { d3.select(this).attr("r", 15); })
-      .on("click", onTreeInfoClicked);
+      .on("click", onNodeInfoClicked);
 
     nodes.append("text")
       .attr("class", "iText")
@@ -127,9 +125,9 @@ function initGraph() {
 
 /**
  * Interface to parse all data starting at
- * @param {String} host of xml root file
+ * @param {String} host of json file
  * @param {String} dataDict dictionary at domain where the data is located
- * @param {String} jsonRootFile file name of xml file defines three root
+ * @param {String} jsonRootFile file name of json file
  */
  function parseData(host, dataDict, jsonDataFile) {
   let jsonRootFullPath = (window.location.href.includes("localhost") || window.location.href.includes("127.0.")) ?
@@ -159,29 +157,25 @@ function initGraph() {
   * Performs action after the info label is clicked
   * @param {Object} d clicked info
   */
- function onTreeInfoClicked(d) {
+ function onNodeInfoClicked(d) {
     let currentNodeId = d.currentTarget.__data__.data.id;
     let node = getNodeByTitle(d.currentTarget.__data__.data.title);
     $("#info_box").empty();
     addNodeInfos(node, "preview");
     document.getElementById("preview").scrollIntoView({ behavior: 'smooth' });
-    //event.stopPropagation();
-    collapseTreeTable();
-    updateTreePlot(currentNodeId);
+    updateGraphPlot(currentNodeId);
  }
 
 /**
  * Performs action after the a node is clicked
  * @param {Object} d clicked info
  */
- function onTreeNodeClicked(d) {
+ function onNodeClicked(d) {
   let currentNodeId = d.currentTarget.__data__.data.id;
   let node = getNodeByTitle(d.currentTarget.__data__.data.title);
   $("#info_box").empty();
   addNodeInfos(node, "preview");
-  //d3.event.stopPropagation();
-  collapseTreeTable();
-  updateTreePlot(currentNodeId);
+  updateGraphPlot(currentNodeId);
 }
 
 /**
@@ -193,7 +187,6 @@ function initGraph() {
   text.each(function (d) {
       let textd3 = d3.select(this);
       if (textd3.node().getComputedTextLength() < width) return;
-      //let words = textd3.text().split(new RegExp(/(?<=[.\-_\s+])/)).reverse();
       let words = textd3.text().split(" ").reverse();
       // split into lines
       let word;
@@ -223,16 +216,14 @@ function initGraph() {
           }
       }
       // set new box height
-      let factor = 19 - lineNumber;
-      //d3.select(this.parentNode.childNodes[0]).attr("height", factor * (lineNumber + 1));
   });
 }
 
 /**
- * Performs tree update. Updates nodes and links.
+ * Performs graph update. Updates nodes and links.
  * @param {Number} currentNodeId
  */
- function updateTreePlot(currentNodeId) {
+ function updateGraphPlot(currentNodeId) {
   graphs = graph.selectAll("path");
   paths = graphs._groups[0];
   paths.forEach(function (d) {
