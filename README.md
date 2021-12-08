@@ -77,7 +77,7 @@ The parsed and prepared data is always stored in the [`SessionStorage`](https://
 
 #### Graph visualization
 
-The visualization is a directed acyclic graph based on [d3 DAG](https://github.com/erikbrinkman/d3-dag) with a Sugiyama base layout.
+The visualization is a directed acyclic graph based on [d3 DAG](https://github.com/erikbrinkman/d3-dag) with a Sugiyama base layout. It is controlled in `dag.js`
 
 ### How to setup the development environment with VS Code
 
