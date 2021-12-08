@@ -1,4 +1,7 @@
+![example workflow](https://github.com/PerCollECT/RadarRami/actions/workflows/validate-json.yml/badge.svg)
+
 # PerCollECT - [RadarRami](https://percollect.github.io/RadarRami/)
+
 ## Perception Sensor Collaborative Effect and Cause Tree (PerCollECT) - Radar Tree
 
 This tree facilitates the analysis of cause and effect chain in the signal processing of automotive radar sensors. Visualization of the tree can be found under [https://percollect.github.io/RadarRami/](https://percollect.github.io/RadarRami/).
@@ -36,8 +39,9 @@ The following shows a simple example of relations between node _18_ (child) and 
 
 A node always contains the following attributes:
 * `id` of the nodes is a consecutive integer.
-* `parentIds` list all parent nodes, the title is a very short description of the effect or cause, that will be displayed directly in the visualization.
-* `decomBlock` refers to the associated decomposition block Emission, Signal Propagation, Reception, Pre-processing, Detection Identification, Feature Identification or Object Identification.
+* `parentIds` list all parent nodes, 
+* `title` is a very short description of the effect or cause, that will be displayed directly in the visualization.
+* `decomBlock` refers to the associated decomposition block Emission, Signal propagation, Reception, Pre-processing, Detection identification, Feature identification or Object identification.
 * `description` contains a more detailed explanation of the effect or cause.
 * `references` contains for every parent the first author, the title and the link to the literature item. Optionally a short note about the reference e.q. the page number of interest can be added.
 * `nodeType` states, if the node is an effect, a designParameter or systemIndependent.
