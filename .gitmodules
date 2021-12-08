@@ -1,3 +1,3 @@
 [submodule "src"]
 	path = src
-	url = git@github.com:PerCollECT/Source-Files.git
+	url = https://github.com/PerCollECT/Source-Files.git
