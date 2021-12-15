@@ -447,7 +447,8 @@
     "decomBlock": "Signal propagation",
     "description":"Attenuation of electromagnetic wave due to scattering and absorption by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In: Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of attenuation by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
     "references": "[25, Yamawaki, 60-GHz Millimeter-Wave Automotive Radar, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "scenarioEntity": "[Precipitation, https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.1.1_Model_Documentation/modelDocumentation/content/Precipitation.html][Fog, https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.1.1_Model_Documentation/modelDocumentation/content/Fog.html]"
   },
   {
     "id": "50",
@@ -456,7 +457,8 @@
     "decomBlock": "Signal propagation",
     "description":"The sensor signal is reflected by multiple object parts within the scene",
     "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "scenarioEntity": "[Barrier, https://www.asam.net/index.php?eID=dumpFile&t=f&f=4422&token=e590561f3c39aa2260e5442e29e93f6693d1cccd#top-EAID_C47587D0_7173_42df_8BB7_36B2C598D95F][Tunnel, https://www.asam.net/index.php?eID=dumpFile&t=f&f=4422&token=e590561f3c39aa2260e5442e29e93f6693d1cccd#top-bfd1f7cb-ff5f-44cb-ad3b-e2e855dcdf0f]"
   },
   {
     "id": "51",
