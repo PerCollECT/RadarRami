@@ -168,7 +168,7 @@
     "decomBlock": "Pre-processing",
     "description":"Aliasing effects in FFTs leading to ambiguous measurements",
     "references": "[19, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2][20, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2]",
-    "nodeType": "designParameter"
+    "nodeType": "effect"
   },
   {
     "id": "19",
@@ -302,7 +302,7 @@
     "title": "Absorption by atm. particles",
     "decomBlock": "Signal propagation",
     "description":"Absorption of electromganetic wave by particles in atmospheric aerosol and accumulated hydrometeors. Hence, converting incoming engery into kinetic and thermal energy within particles. Absorption cross section being a measure of the probability to absorb an electromagnetic wave by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section",
-    "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [49, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
   {
@@ -311,16 +311,16 @@
     "title": "Scattering by atm. particles",
     "decomBlock": "Signal propagation",
     "description":"Scattering of electromagnetic wave by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any engery but scattering incoming electromagnetic waves",
-    "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [49, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
   {
     "id": "35",
-    "parentIds": ["32"],
+    "parentIds": ["32", "61"],
     "title": "Occlusion by object parts",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[32, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298]",
+    "references": "[32, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298] [61, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
   {
@@ -446,7 +446,7 @@
     "title": "Attenuation by atm. aerosol particles and accumulated hydrometeors",
     "decomBlock": "Signal propagation",
     "description":"Attenuation of electromagnetic wave due to scattering and absorption by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In: Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of attenuation by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
-    "references": "[25, Yamawaki, 60-GHz Millimeter-Wave Automotive Radar, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf]",
+    "references": "[25, Yamawaki, 60-GHz Millimeter-Wave Automotive Radar, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf] [25, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
   {
@@ -465,6 +465,177 @@
     "decomBlock": "Signal propagation",
     "description":"Speed of light in propagation medium",
     "references": "[21, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limitation of resolution]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "52",
+    "parentIds": ["56", "5", "61"],
+    "title": "Object too close to sensor",
+    "decomBlock": "Signal propagation",
+    "description":"Object being located too close from sensor.",
+    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.] [5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [61, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "53",
+    "parentIds": ["25"],
+    "title": "Object too far from sensor",
+    "decomBlock": "Signal propagation",
+    "description":"Object being located too far from sensor.",
+    "references": "[25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "54",
+    "parentIds": ["52", "53"],
+    "title": "Distance between sensor and object",
+    "decomBlock": "Signal propagation",
+    "description":"Spatial distance between Radar Sensor and object.",
+    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [53, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "55",
+    "parentIds": ["56"],
+    "title": "Pulse length of pulsed Radar signal",
+    "decomBlock": "Emission",
+    "description":"Emitted pulse length of pulsed Radar signal.",
+    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "56",
+    "parentIds": ["1", "0"],
+    "title": "Range in which distance cannot be correctly determined or be determined at all",
+    "decomBlock": "Signal propagation",
+    "description":"Range, starting from sensor and corresponding approximately to the pulse length, in which the distance cannot be correctly determined. No detection at all under ca. 25% of pulse length.",
+    "references": "[1, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [0, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "57",
+    "parentIds": ["17", "18"],
+    "title": "Sampling rate of sensor",
+    "decomBlock": "Reception",
+    "description":"",
+    "references": "[17, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.][18, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.354.]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "58",
+    "parentIds": ["17"],
+    "title": "Length of sampled received signal",
+    "decomBlock": "Reception",
+    "description":"Received length of sampled pulsed radar signal, regarding the use of a Pulse Doppler Radar System.",
+    "references": "[17, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "59",
+    "parentIds": ["50", "60", "35"],
+    "title": "Radar mounting position",
+    "decomBlock": "Emission",
+    "description":"Radar mounted at low height.",
+    "references": "[50, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001][60, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001][35, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "60",
+    "parentIds": [],
+    "title": "Contamination by road dirt",
+    "decomBlock": "Emission",
+    "description":"Layer of road dirt occuring on sensor.",
+    "references": "",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "61",
+    "parentIds": ["0"],
+    "title": "Limited sensor field of view",
+    "decomBlock": "Emission",
+    "description":"Field of view of sensor being spatially limited.",
+    "references": "[0, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Blind ranges being referred to missing detectable areas; here.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "62",
+    "parentIds": ["6"],
+    "title": "Antenna sidelobes",
+    "decomBlock": "Emission",
+    "description":"Three-dimensionally distribution radar intensity related to the originally transmitted intensity, typically occuring as bulge-like shapes being referred as lobes. Lobes next to a characteristic central main lobe being referred as side lobes.",
+    "references": "[6, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Side lobe detections being referred to false positive detections; here.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "63",
+    "parentIds": ["25"],
+    "title": "Attenuation by atm. molecules",
+    "decomBlock": "Signal propagation",
+    "description":"Attenuation of electromagnetic wave due to absorption by molecules in propagation medium.",
+    "references": "[25, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Oxygen being mentioned here as being highly absorbing regarding radar wavelengths at 60GHz.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "64",
+    "parentIds": ["17"],
+    "title": "Noise floor",
+    "decomBlock": "Pre-processing",
+    "description":"Variety of unintentional measurements.",
+    "references": "[17, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "65",
+    "parentIds": ["64"],
+    "title": "Radar crosstalk",
+    "decomBlock": "Signal propagation",
+    "description":"Crosstalk being a mutual irradiation of receivers by emitted radiation of two seperately installed Radar Sensors in different vehicles.",
+    "references": "[64, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "66",
+    "parentIds": ["65"],
+    "title": "Another active Radar Sensor",
+    "decomBlock": "Signal propagation",
+    "description":"Emerging of further active Radar Sensor.",
+    "references": "[65, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "67",
+    "parentIds": ["64"],
+    "title": "Thermal noise",
+    "decomBlock": "Reception",
+    "description":"Noise induced by spontaneous generation of free charge carriers within receiver electronics due to thermal excitement of electrons without exposal to radiation.",
+    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "68",
+    "parentIds": ["64"],
+    "title": "Phase noise",
+    "decomBlock": "Emission",
+    "description":"Local oscillator not only emitting fixed line spectrum but also frequencies slightly deviating from desired line spectrum.",
+    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "69",
+    "parentIds": ["64"],
+    "title": "Amplifier noise",
+    "decomBlock": "Reception",
+    "description":"Noise induced by amplifier in reception unit.",
+    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "70",
+    "parentIds": ["64"],
+    "title": "Quantization noise",
+    "decomBlock": "Reception",
+    "description":"Noise induced by analog-to-digital converter whithin reception unit due to inaccuracies while converting continuous voltage signals into discrete digital signals.",
+    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
     "nodeType": "systemIndependent"
   }
 ]
