@@ -64,11 +64,11 @@
   },
   {
     "id": "7",
-    "parentIds": ["33","34","40","41","42","22"],
+    "parentIds": ["33","34","40","41","42","22","25"],
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
-    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
     "nodeType": "designParameter"
   },
   {
@@ -211,7 +211,7 @@
     "parentIds": ["5"],
     "title": "Angle resolution",
     "decomBlock": "Pre-processing",
-    "description":"Resolution of angle measurement after FFT",
+    "description":"Resolution of angle measurement after FFT.",
     "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "designParameter"
   },
@@ -451,11 +451,11 @@
   },
   {
     "id": "50",
-    "parentIds": ["1","2","6"],
-    "title": "Multi-path reflection by multiple object parts",
+    "parentIds": ["1","2","6","73"],
+    "title": "Multi-path reflection",
     "decomBlock": "Signal propagation",
-    "description":"The sensor signal is reflected by multiple object parts within the scene",
-    "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]",
+    "description":"The sensor signal is reflected by multiple object parts within the scene, including road surface.",
+    "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections] [73, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330-331.]",
     "nodeType": "effect"
   },
   {
@@ -477,21 +477,12 @@
     "nodeType": "systemIndependent"
   },
   {
-    "id": "53",
-    "parentIds": ["25"],
-    "title": "Object too far from sensor",
-    "decomBlock": "Signal propagation",
-    "description":"Object being located too far from sensor.",
-    "references": "[25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
-    "nodeType": "systemIndependent"
-  },
-  {
     "id": "54",
-    "parentIds": ["52", "53"],
+    "parentIds": ["52", "43", "63", "25"],
     "title": "Distance between sensor and object",
     "decomBlock": "Signal propagation",
     "description":"Spatial distance between Radar Sensor and object.",
-    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [53, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [43, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [63, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Oxygen being mentioned here as being highly absorbing regarding radar wavelengths at 60GHz.] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
     "nodeType": "systemIndependent"
   },
   {
@@ -637,5 +628,32 @@
     "description":"Noise induced by analog-to-digital converter whithin reception unit due to inaccuracies while converting continuous voltage signals into discrete digital signals.",
     "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
     "nodeType": "systemIndependent"
+  },
+  {
+    "id": "71",
+    "parentIds": ["25"],
+    "title": "Emission power level",
+    "decomBlock": "Emission",
+    "description":"Power level of emitted radiation.",
+    "references": "[25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "72",
+    "parentIds": ["25"],
+    "title": "Antenna gain",
+    "decomBlock": "Emission",
+    "description":"Antenna gain considering the antenna losses and the divergence of emitted radiation by installed antenna.",
+    "references": "[25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "73",
+    "parentIds": ["25"],
+    "title": "Destructive interference",
+    "decomBlock": "Emission",
+    "description":"Destructive interference of propagating radiation.",
+    "references": "[25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Destructive interference being expressed as signal power 'shaker' with the factor V_mp^2; here. See p.330-331.]",
+    "nodeType": "effect"
   }
 ]
