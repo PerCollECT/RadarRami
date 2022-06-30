@@ -64,11 +64,11 @@
   },
   {
     "id": "7",
-    "parentIds": ["33","34","40","41","42","22","25"],
+    "parentIds": ["33","34","40","41","42","22","25", "72"],
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
-    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.]",
     "nodeType": "designParameter"
   },
   {
@@ -383,16 +383,16 @@
     "title": "Specular/diffuse reflection by object parts",
     "decomBlock": "Signal propagation",
     "description":"Object parts reflecting portions of the electromagnetic wave. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF)",
-    "references": "[25, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][35, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][50, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved]",
+    "references": "[25, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][35, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][50, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved]",
     "nodeType": "effect"
   },
   {
     "id": "43",
-    "parentIds": ["33"],
+    "parentIds": ["33", "34"],
     "title": "Signal distance in atm. particle volume",
     "decomBlock": "Signal propagation",
     "description":"Distance of electromagnetic wave travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors",
-    "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Doviak and Zrnic', Reflection and scatter formula for anisotropically turbulent air, http://doi.wiley.com/10.1029/RS019i001p00325]",
     "nodeType": "systemIndependent"
   },
   {
@@ -651,9 +651,36 @@
     "id": "73",
     "parentIds": ["25"],
     "title": "Destructive interference",
-    "decomBlock": "Emission",
+    "decomBlock": "Signal propagation",
     "description":"Destructive interference of propagating radiation.",
     "references": "[25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Destructive interference being expressed as signal power 'shaker' with the factor V_mp^2; here. See p.330-331.]",
     "nodeType": "effect"
+  },
+  {
+    "id": "74",
+    "parentIds": ["64"],
+    "title": "Spray from road surface stirred up by vehicles",
+    "decomBlock": "Signal propagation",
+    "description":"Vehicles close by may create stirred up spray when driving over watery surfaces.",
+    "references": "[64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "75",
+    "parentIds": ["14"],
+    "title": "Lens effect by water layer on radome",
+    "decomBlock": "Emission",
+    "description":"Water coverage of radome creating lens-like layer.",
+    "references": "[14, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "76",
+    "parentIds": ["72"],
+    "title": "Antenna size",
+    "decomBlock": "Emission",
+    "description":"Size of installed antenna.",
+    "references": "[72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.]",
+    "nodeType": "designParameter"
   }
 ]
