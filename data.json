@@ -68,7 +68,7 @@
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
-    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.]",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
     "nodeType": "designParameter"
   },
   {
@@ -401,7 +401,7 @@
     "title": "Material properties of object parts",
     "decomBlock": "Signal propagation",
     "description":"",
-    "references": "[40, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][41, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455]",
+    "references": "[40, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.][41, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -581,7 +581,7 @@
     "title": "Radar crosstalk",
     "decomBlock": "Signal propagation",
     "description":"Crosstalk being a mutual irradiation of receivers by emitted radiation of two seperately installed Radar Sensors in different vehicles.",
-    "references": "[64, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800]",
+    "references": "[64, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.378.]",
     "nodeType": "effect"
   },
   {
@@ -590,7 +590,7 @@
     "title": "Another active Radar Sensor",
     "decomBlock": "Signal propagation",
     "description":"Emerging of further active Radar Sensor.",
-    "references": "[65, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800]",
+    "references": "[65, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [65, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.378.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -681,6 +681,24 @@
     "decomBlock": "Emission",
     "description":"Size of installed antenna.",
     "references": "[72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "77",
+    "parentIds": ["42", "40"],
+    "title": "Thickness of object part material",
+    "decomBlock": "Signal propagation",
+    "description":"Thickness of object part material considered being the length of the path in normal direction of the tangential plane through the object part material.",
+    "references": "[42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "78",
+    "parentIds": ["42", "40"],
+    "title": "Emitter polarization",
+    "decomBlock": "Emission",
+    "description":"A polarized electromagnetic wave is having no disordered but fixed directions of the oscillating electric and the orthogonal magnetic field.",
+    "references": "[42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
     "nodeType": "designParameter"
   }
 ]
