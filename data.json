@@ -4,7 +4,7 @@
     "parentIds": ["8"],
     "title": "False negative detection",
     "decomBlock": "Detection identification",
-    "description": "Missing detection, compared to an ideally detected surrounding" ,
+    "description": "Missing detection, compared to an ideally detected surrounding." ,
     "references": "[8, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
@@ -13,7 +13,7 @@
     "parentIds": ["14"],
     "title": "Detection position error",
     "decomBlock": "Detection identification",
-    "description": "Detection identified at wrong position e.g. due to aliasing or multi-path propagation" ,
+    "description": "Detection identified at wrong position e.g. due to aliasing or multi-path propagation." ,
     "references": "[14, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
@@ -22,7 +22,7 @@
     "parentIds": ["15"],
     "title": "Detection velocity error",
     "decomBlock": "Detection identification",
-    "description": "Detection identified with a wrong velocity e.g. due to multi-path propagation" ,
+    "description": "Detection identified with a wrong velocity e.g. due to multi-path propagation." ,
     "references": "[15, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
@@ -31,7 +31,7 @@
     "parentIds": ["2"],
     "title": "Error in velocity ambiguity resolution",
     "decomBlock": "Detection identification",
-    "description": "Error in algorithm for ambiguity resolution of ambiguous velocity measurements" ,
+    "description": "Error in algorithm for ambiguity resolution of ambiguous velocity measurements." ,
     "references": "[2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
@@ -40,7 +40,7 @@
     "parentIds": ["1"],
     "title": "Error in angle ambiguity resolution",
     "decomBlock": "Detection identification",
-    "description": "Error in algorithm for ambiguity resolution of ambiguous angle measurements" ,
+    "description": "Error in algorithm for ambiguity resolution of ambiguous angle measurements." ,
     "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
@@ -49,7 +49,7 @@
     "parentIds": ["0"],
     "title": "Detection separation error",
     "decomBlock": "Detection identification",
-    "description": "Multiple object parts are located within a single resolution cell and cannot be separated" ,
+    "description": "Multiple object parts are located within a single resolution cell and cannot be separated." ,
     "references": "[0, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
@@ -58,17 +58,17 @@
     "parentIds": ["13"],
     "title": "False positive detection",
     "decomBlock": "Detection identification",
-    "description": "Additional detection, compared to an ideally detected surrounding" ,
+    "description": "Additional detection, compared to an ideally detected surrounding." ,
     "references": "[13, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, for multi-path propagation]",
     "nodeType": "effect"
   },
   {
     "id": "7",
-    "parentIds": ["33","34","40","41","42","22","25", "72"],
+    "parentIds": ["33","34","40","41","42","22","25", "72", "82"],
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
-    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [33, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [82, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "designParameter"
   },
   {
@@ -85,7 +85,7 @@
     "parentIds": [],
     "title": "Object existence error",
     "decomBlock": "Object identification",
-    "description": "Error in determination of the existence of an object",
+    "description": "Error in determination of the existence of an object.",
     "references": "",
     "nodeType": "effect"
   },
@@ -94,7 +94,7 @@
     "parentIds": [],
     "title": "Object state error",
     "decomBlock": "Object identification",
-    "description": "Error in determination of a state of an object",
+    "description": "Error in determination of a state of an object.",
     "references": "",
     "nodeType": "effect"
   },
@@ -103,7 +103,7 @@
     "parentIds": [],
     "title": "Object class error",
     "decomBlock": "Object identification",
-    "description": "Error in determination of the object class",
+    "description": "Error in determination of the object class.",
     "references": "",
     "nodeType": "effect"
   },
@@ -112,7 +112,7 @@
     "parentIds": ["9"],
     "title": "False negative in object list",
     "decomBlock": "Object identification",
-    "description": "An object present in ground truth is not detected by the sensor",
+    "description": "An object present in ground truth is not detected by the sensor.",
     "references": "[9, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
     "nodeType": "effect"
   },
@@ -121,7 +121,7 @@
     "parentIds": ["9"],
     "title": "False positive in object list",
     "decomBlock": "Object identification",
-    "description": "An object not present in ground truth is detected by the sensor",
+    "description": "An object not present in ground truth is detected by the sensor.",
     "references": "[9, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
     "nodeType": "effect"
   },
@@ -130,17 +130,17 @@
     "parentIds": ["10"],
     "title": "Object position error",
     "decomBlock": "Object identification",
-    "description": "The identified object is located at a wrong position",
+    "description": "The identified object is located at a wrong position.",
     "references": "[10, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
     "nodeType": "effect"
   },
   {
     "id": "15",
-    "parentIds": ["10"],
+    "parentIds": ["10", "94"],
     "title": "Object velocity error",
     "decomBlock": "Object identification",
-    "description": "The identified object has a wrong velocity",
-    "references": "[10, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
+    "description": "The identified object has a wrong velocity.",
+    "references": "[10, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.] [94, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Object velocities being included in features m3; m4; m5 here.]",
     "nodeType": "effect"
   },
   {
@@ -148,7 +148,7 @@
     "parentIds": ["12","13","14","15"],
     "title": "Tracking error",
     "decomBlock": "Object identification",
-    "description": "Error in object tracking algorithm e.g. in the transient phases of a filter",
+    "description": "Error in object tracking algorithm e.g. in the transient phases of a filter.",
     "references": "[12, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [13, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [14, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [15, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "designParameter"
   },
@@ -166,7 +166,7 @@
     "parentIds": ["19","20"],
     "title": "Aliasing",
     "decomBlock": "Pre-processing",
-    "description":"Aliasing effects in FFTs leading to ambiguous measurements",
+    "description":"Aliasing effects in FFTs leading to ambiguous measurements.",
     "references": "[19, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2][20, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2]",
     "nodeType": "effect"
   },
@@ -175,7 +175,7 @@
     "parentIds": ["3"],
     "title": "Ambiguous velocity measurements",
     "decomBlock": "Pre-processing",
-    "description":"Ambiguous velocity measurement due to aliasing effects in FFTs",
+    "description":"Ambiguous velocity measurement due to aliasing effects in FFTs.",
     "references": "[3, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
@@ -184,7 +184,7 @@
     "parentIds": ["4"],
     "title": "Ambiguous angle measurements",
     "decomBlock": "Pre-processing",
-    "description":"Ambiguous angle measurement due to aliasing effects in FFTs",
+    "description":"Ambiguous angle measurement due to aliasing effects in FFTs.",
     "references": "[4, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
@@ -193,7 +193,7 @@
     "parentIds": ["5"],
     "title": "Velocity resolution",
     "decomBlock": "Pre-processing",
-    "description":"Resolution of velocity measurement after FFT",
+    "description":"Resolution of velocity measurement after FFT.",
     "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "designParameter"
   },
@@ -202,17 +202,17 @@
     "parentIds": ["5"],
     "title": "Range resolution",
     "decomBlock": "Pre-processing",
-    "description":"Resolution of range measurement after FFT",
+    "description":"Resolution of range measurement after FFT.",
     "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "designParameter"
   },
   {
     "id": "23",
-    "parentIds": ["5"],
+    "parentIds": ["5", "95", "96"],
     "title": "Angle resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of angle measurement after FFT.",
-    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'.]",
     "nodeType": "designParameter"
   },
   {
@@ -220,7 +220,7 @@
     "parentIds": ["6"],
     "title": "Mixer non-linearities",
     "decomBlock": "Pre-processing",
-    "description":"The mixer in a radar is often realized with Schottky diodes. While higher frequency components are suppressed by low-pass filters, the harmonics of the mixed signal’s product can cause distractions if its attenuation is not sufficiently high.' (Holder et al.)",
+    "description":"The mixer in a Radar is often realized with Schottky diodes. While higher frequency components are suppressed by low-pass filters, the harmonics of the mixed signal’s product can cause distractions if its attenuation is not sufficiently high.' (Holder et al.).",
     "references": "[6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, 'For a large and highly reflective target the radar will report a second target at the double distance similar to a repeated path reflection.']",
     "nodeType": "designParameter"
   },
@@ -247,7 +247,7 @@
     "parentIds": ["17"],
     "title": "Sensitivity of receiver",
     "decomBlock": "Reception",
-    "description":"Lowest possible receiving power at the receiver with which the radar still detects a target.",
+    "description":"Lowest possible receiving power at the receiver with which the Radar still detects a target.",
     "references": "[17, Li, Trade-off between sensitivity and dynamic range in designing digital radar receivers, https://ieeexplore.ieee.org/document/4540695]",
     "nodeType": "designParameter"
   },
@@ -256,7 +256,7 @@
     "parentIds": ["22"],
     "title": "Modulation bandwidth",
     "decomBlock": "Reception",
-    "description":"Bandwith of chirps in chirp sequence radar",
+    "description":"Bandwith of chirps in chirp sequence Radar.",
     "references": "[22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "designParameter"
   },
@@ -265,26 +265,26 @@
     "parentIds": ["21"],
     "title": "Measurement time",
     "decomBlock": "Reception",
-    "description":"Time for one scan",
+    "description":"Time for one scan.",
     "references": "[21, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
     "nodeType": "designParameter"
   },
   {
     "id": "30",
-    "parentIds": ["23"],
+    "parentIds": ["23", "72", "62"],
     "title": "Spacing between virtual reception antennas",
     "decomBlock": "Reception",
-    "description":"Spacing between virtual antennas of a MIMO antenna array",
-    "references": "[23, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Spacing between virtual antennas of a MIMO antenna array.",
+    "references": "[23, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [72, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, No direct reference here; further research recommended.] [62, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, No direct reference here; further research recommended.]",
     "nodeType": "designParameter"
   },
   {
     "id": "31",
-    "parentIds": ["23"],
+    "parentIds": ["23", "72", "62"],
     "title": "Number of virtual reception antennas",
     "decomBlock": "Reception",
-    "description":"Number of virtual antennas in a MIMO antenna array",
-    "references": "[23, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "description":"Number of virtual antennas in a MIMO antenna array.",
+    "references": "[23, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [72, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, No direct reference here; further research recommended.] [62, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, No direct reference here; further research recommended.]",
     "nodeType": "designParameter"
   },
   {
@@ -292,7 +292,7 @@
     "parentIds": ["25"],
     "title": "Occlusion by objects",
     "decomBlock": "Signal propagation",
-    "description":"Objects located in front of other objects preventing reception of power by receiving antenna",
+    "description":"Objects located in front of other objects preventing reception of power by receiving antenna.",
     "references": "[25, Holder et al, Measurements revealing Challenges in Radar Sensor Modeling for Virtual Validation of Autonomous Driving, https://ieeexplore.ieee.org/document/8569423]",
     "nodeType": "effect"
   },
@@ -301,7 +301,7 @@
     "parentIds": ["49"],
     "title": "Absorption by atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Absorption of electromganetic wave by particles in atmospheric aerosol and accumulated hydrometeors. Hence, converting incoming engery into kinetic and thermal energy within particles. Absorption cross section being a measure of the probability to absorb an electromagnetic wave by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section",
+    "description":"Absorption of electromganetic wave by particles in atmospheric aerosol and accumulated hydrometeors. Hence, converting incoming engery into kinetic and thermal energy within particles. Absorption cross section being a measure of the probability to absorb an electromagnetic wave by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section.",
     "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [49, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
@@ -310,7 +310,7 @@
     "parentIds": ["49"],
     "title": "Scattering by atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Scattering of electromagnetic wave by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any engery but scattering incoming electromagnetic waves",
+    "description":"Scattering of electromagnetic wave by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any engery but scattering incoming electromagnetic waves.",
     "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [49, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
@@ -319,7 +319,7 @@
     "parentIds": ["32", "61"],
     "title": "Occlusion by object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
+    "description":"Object parts located in front of other object parts preventing reception of power by receiving antenna.",
     "references": "[32, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298] [61, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
@@ -337,7 +337,7 @@
     "parentIds": ["33","34"],
     "title": "Number concentration of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Number concentration of atmospheric aerosol particles in regular automotive radar surroundings is high enough to interact measurable with electromagnetic wave. Number concentration of accumulated hydrometeors depending on environmental influences",
+    "description":"Number concentration of atmospheric aerosol particles in regular automotive Radar surroundings is high enough to interact measurable with electromagnetic wave. Number concentration of accumulated hydrometeors depending on environmental influences.",
     "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "systemIndependent"
   },
@@ -346,7 +346,7 @@
     "parentIds": ["33","34"],
     "title": "Refractive index of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter",
+    "description":"Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter.",
     "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "systemIndependent"
   },
@@ -355,7 +355,7 @@
     "parentIds": ["33","34"],
     "title": "Size of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Geometric size of atmospheric particles",
+    "description":"Geometric size of atmospheric particles.",
     "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "systemIndependent"
   },
@@ -364,7 +364,7 @@
     "parentIds": ["25"],
     "title": "Transmittance and refraction by object parts",
     "decomBlock": "Signal propagation",
-    "description":"Object parts transmitting portions of the electromagnetic wave. Transmittance, building on refraction, being expressed by Bidirectional Transmittance Distribution Function (BTDF)",
+    "description":"Object parts transmitting portions of the electromagnetic wave. Transmittance, building on refraction, can be expressed by Bidirectional Transmittance Distribution Function (BTDF).",
     "references": "[25, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455",
     "nodeType": "effect"
   },
@@ -373,17 +373,17 @@
     "parentIds": ["25","35"],
     "title": "Absorption by object parts",
     "decomBlock": "Signal propagation",
-    "description":"Object parts absorbing portions of the electromagnetic wave. Hence, converting incoming light engery into kinetic and thermal energy",
+    "description":"Object parts absorbing portions of the electromagnetic wave. Hence, converting incoming light engery into kinetic and thermal energy.",
     "references": "[25, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][35, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
     "id": "42",
-    "parentIds": ["25","35","50"],
+    "parentIds": ["25","35","50", "79"],
     "title": "Specular/diffuse reflection by object parts",
     "decomBlock": "Signal propagation",
-    "description":"Object parts reflecting portions of the electromagnetic wave. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF)",
-    "references": "[25, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][35, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][50, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved]",
+    "description":"Object parts reflecting portions of the electromagnetic wave. Diffuse reflection being referred as scattering. Radar cross section of an object is being defined by reflection characteristics. Reflectance of an object part can be expressed by Bidirectional Reflectance Distribution Function (BRDF).",
+    "references": "[25, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][35, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][50, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved] [79, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
     "nodeType": "effect"
   },
   {
@@ -391,7 +391,7 @@
     "parentIds": ["33", "34"],
     "title": "Signal distance in atm. particle volume",
     "decomBlock": "Signal propagation",
-    "description":"Distance of electromagnetic wave travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors",
+    "description":"Distance of electromagnetic wave travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors.",
     "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Doviak and Zrnic', Reflection and scatter formula for anisotropically turbulent air, http://doi.wiley.com/10.1029/RS019i001p00325]",
     "nodeType": "systemIndependent"
   },
@@ -400,44 +400,44 @@
     "parentIds": ["40","41","42"],
     "title": "Material properties of object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
+    "description":"Relevant material properties of object parts, regarding the interaction with radiation, being electron density, magnetic permeability, dielectric permittivity, contuctivity, band structure, grain boundaries, occurence of multiple phases or pores, the temperature itself, e.g.",
     "references": "[40, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.][41, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "45",
-    "parentIds": ["42"],
+    "parentIds": ["42", "40", "41"],
     "title": "Object part surface roughness",
     "decomBlock": "Signal propagation",
-    "description":"Roughness being a value for the heights and depths of microscopic bumps and holes within a surface",
-    "references": "[42, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298]",
+    "description":"Roughness being a value for the heights and depths of microscopic bumps and holes within a surface.",
+    "references": "[42, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298] [40, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.] [41, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "46",
-    "parentIds": ["42"],
+    "parentIds": ["42", "40", "41"],
     "title": "Object part surface texture",
     "decomBlock": "Signal propagation",
-    "description":"Object part surface texture describing the macroscopic appearance of the object part surface structure",
-    "references": "[42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455]",
+    "description":"Object part surface texture describing the macroscopic appearance of the object part surface structure.",
+    "references": "[42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [40, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.] [41, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "47",
-    "parentIds": ["42"],
+    "parentIds": ["42", "40", "41"],
     "title": "Size of object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455]",
+    "description":"Geometric size of object parts in terms of spatial expansion.",
+    "references": "[42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [40, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.] [41, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "48",
-    "parentIds": ["42"],
+    "parentIds": ["42", "40", "41"],
     "title": "Pose of object parts",
     "decomBlock": "Signal propagation",
-    "description":"",
-    "references": "[42, Holder et al, Measurements revealing Challenges in Radar Sensor Modeling for Virtual Validation of Autonomous Driving, https://ieeexplore.ieee.org/document/8569423]",
+    "description":"Position and orientation are determining the pose of an object part with respect to DIN EN ISO 8373.",
+    "references": "[42, Holder et al, Measurements revealing Challenges in Radar Sensor Modeling for Virtual Validation of Autonomous Driving, https://ieeexplore.ieee.org/document/8569423] [40, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.] [41, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -463,7 +463,7 @@
     "parentIds": ["21"],
     "title": "Speed of light",
     "decomBlock": "Signal propagation",
-    "description":"Speed of light in propagation medium",
+    "description":"Speed of light in propagation medium.",
     "references": "[21, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limitation of resolution]",
     "nodeType": "systemIndependent"
   },
@@ -478,11 +478,11 @@
   },
   {
     "id": "54",
-    "parentIds": ["52", "43", "63", "25"],
+    "parentIds": ["52", "43", "25", "81",  "95", "96"],
     "title": "Distance between sensor and object",
     "decomBlock": "Signal propagation",
-    "description":"Spatial distance between Radar Sensor and object.",
-    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [43, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [63, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Oxygen being mentioned here as being highly absorbing regarding radar wavelengths at 60GHz.] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "description":"Spatial distance between Radar sensor and object.",
+    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [43, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [81, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'. Number 'n' of resolution cells assumed to be dependent of the distance between sensor and object; here; similar to explanation in chapter 'The size of an object' within presented literature.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -505,38 +505,29 @@
   },
   {
     "id": "57",
-    "parentIds": ["17", "18"],
+    "parentIds": ["18"],
     "title": "Sampling rate of sensor",
     "decomBlock": "Reception",
     "description":"",
-    "references": "[17, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.][18, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.354.]",
+    "references": "[18, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.354.]",
     "nodeType": "designParameter"
-  },
-  {
-    "id": "58",
-    "parentIds": ["17"],
-    "title": "Length of sampled received signal",
-    "decomBlock": "Reception",
-    "description":"Received length of sampled pulsed radar signal, regarding the use of a Pulse Doppler Radar System.",
-    "references": "[17, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
-    "nodeType": "systemIndependent"
   },
   {
     "id": "59",
     "parentIds": ["50", "60", "35"],
     "title": "Radar mounting position",
     "decomBlock": "Emission",
-    "description":"Radar mounted at low height.",
-    "references": "[50, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001][60, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001][35, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "description":"Radar mounting position in ego vehicle.",
+    "references": "[50, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting position exacerbating multi-path effects.][60, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting position exacerbating contamination of sensor by road dirt.][35, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Radar beam being screened by bonnet of ego vehicle.]",
     "nodeType": "designParameter"
   },
   {
     "id": "60",
-    "parentIds": [],
+    "parentIds": ["25"],
     "title": "Contamination by road dirt",
     "decomBlock": "Emission",
     "description":"Layer of road dirt occuring on sensor.",
-    "references": "",
+    "references": "[25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
     "nodeType": "systemIndependent"
   },
   {
@@ -550,11 +541,11 @@
   },
   {
     "id": "62",
-    "parentIds": ["6"],
-    "title": "Antenna sidelobes",
+    "parentIds": ["6", "15"],
+    "title": "Antenna diagram sidelobes",
     "decomBlock": "Emission",
-    "description":"Three-dimensionally distribution radar intensity related to the originally transmitted intensity, typically occuring as bulge-like shapes being referred as lobes. Lobes next to a characteristic central main lobe being referred as side lobes.",
-    "references": "[6, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Side lobe detections being referred to false positive detections; here.]",
+    "description":"Three-dimensional distribution of amplification and attenuation of transmitted and received signal, typically occuring as bulge-like shapes being referred as lobes. Lobes next to a characteristic central main lobe being referred as side lobes.",
+    "references": "[6, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Side lobe detections being referred to false positive detections; here.] [15, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum fractions with higher velocities for static objects than they should have; mentioned here as a potential consequence.]",
     "nodeType": "effect"
   },
   {
@@ -563,16 +554,16 @@
     "title": "Attenuation by atm. molecules",
     "decomBlock": "Signal propagation",
     "description":"Attenuation of electromagnetic wave due to absorption by molecules in propagation medium.",
-    "references": "[25, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Oxygen being mentioned here as being highly absorbing regarding radar wavelengths at 60GHz.]",
+    "references": "[25, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
     "nodeType": "effect"
   },
   {
     "id": "64",
-    "parentIds": ["17"],
+    "parentIds": ["17", "98"],
     "title": "Noise floor",
     "decomBlock": "Pre-processing",
     "description":"Variety of unintentional measurements.",
-    "references": "[17, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800]",
+    "references": "[17, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [98, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/]",
     "nodeType": "effect"
   },
   {
@@ -580,54 +571,54 @@
     "parentIds": ["64"],
     "title": "Radar crosstalk",
     "decomBlock": "Signal propagation",
-    "description":"Crosstalk being a mutual irradiation of receivers by emitted radiation of two seperately installed Radar Sensors in different vehicles.",
+    "description":"Crosstalk being a mutual irradiation of receivers by emitted radiation of two seperately installed Radar sensors in different vehicles.",
     "references": "[64, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.378.]",
     "nodeType": "effect"
   },
   {
     "id": "66",
     "parentIds": ["65"],
-    "title": "Another active Radar Sensor",
+    "title": "Another active Radar sensor",
     "decomBlock": "Signal propagation",
-    "description":"Emerging of further active Radar Sensor.",
+    "description":"Emerging of further active Radar sensor.",
     "references": "[65, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [65, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.378.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "67",
-    "parentIds": ["64"],
+    "parentIds": ["99"],
     "title": "Thermal noise",
     "decomBlock": "Reception",
     "description":"Noise induced by spontaneous generation of free charge carriers within receiver electronics due to thermal excitement of electrons without exposal to radiation.",
-    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
-    "nodeType": "systemIndependent"
+    "references": "[99, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "effect"
   },
   {
     "id": "68",
-    "parentIds": ["64"],
+    "parentIds": ["99", "86"],
     "title": "Phase noise",
     "decomBlock": "Emission",
     "description":"Local oscillator not only emitting fixed line spectrum but also frequencies slightly deviating from desired line spectrum.",
-    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
-    "nodeType": "systemIndependent"
+    "references": "[99, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [86, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.373.]",
+    "nodeType": "effect"
   },
   {
     "id": "69",
-    "parentIds": ["64"],
+    "parentIds": ["99"],
     "title": "Amplifier noise",
     "decomBlock": "Reception",
-    "description":"Noise induced by amplifier in reception unit.",
-    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
-    "nodeType": "systemIndependent"
+    "description":"Noise induced by amplifier due to inaccuracies while signal conversion.",
+    "references": "[99, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "effect"
   },
   {
     "id": "70",
-    "parentIds": ["64"],
+    "parentIds": ["99"],
     "title": "Quantization noise",
     "decomBlock": "Reception",
     "description":"Noise induced by analog-to-digital converter whithin reception unit due to inaccuracies while converting continuous voltage signals into discrete digital signals.",
-    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
-    "nodeType": "systemIndependent"
+    "references": "[99, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/]",
+    "nodeType": "effect"
   },
   {
     "id": "71",
@@ -645,7 +636,7 @@
     "decomBlock": "Emission",
     "description":"Antenna gain considering the antenna losses and the divergence of emitted radiation by installed antenna.",
     "references": "[25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.]",
-    "nodeType": "designParameter"
+    "nodeType": "effect"
   },
   {
     "id": "73",
@@ -658,47 +649,290 @@
   },
   {
     "id": "74",
-    "parentIds": ["64"],
+    "parentIds": ["37"],
     "title": "Spray from road surface stirred up by vehicles",
     "decomBlock": "Signal propagation",
     "description":"Vehicles close by may create stirred up spray when driving over watery surfaces.",
-    "references": "[64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
+    "references": "[37, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "75",
-    "parentIds": ["14"],
+    "parentIds": ["80"],
     "title": "Lens effect by water layer on radome",
     "decomBlock": "Emission",
     "description":"Water coverage of radome creating lens-like layer.",
-    "references": "[14, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
-    "nodeType": "systemIndependent"
+    "references": "[80, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
+    "nodeType": "effect"
   },
   {
     "id": "76",
-    "parentIds": ["72"],
-    "title": "Antenna size",
+    "parentIds": ["72", "62"],
+    "title": "Antenna design",
     "decomBlock": "Emission",
-    "description":"Size of installed antenna.",
-    "references": "[72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.]",
+    "description":"Design and arrangement of antenna patches and elements installed in sensor.",
+    "references": "[72, Khan et al., Hybrid Thin Film Antenna for Automotive Radar at 79 GHz, http://ieeexplore.ieee.org/document/8012529/] [62, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.354-357.]",
     "nodeType": "designParameter"
   },
   {
     "id": "77",
-    "parentIds": ["42", "40"],
+    "parentIds": ["42", "40", "41"],
     "title": "Thickness of object part material",
     "decomBlock": "Signal propagation",
     "description":"Thickness of object part material considered being the length of the path in normal direction of the tangential plane through the object part material.",
-    "references": "[42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
+    "references": "[42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [41, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "78",
-    "parentIds": ["42", "40"],
+    "parentIds": ["42", "40", "41"],
     "title": "Emitter polarization",
     "decomBlock": "Emission",
     "description":"A polarized electromagnetic wave is having no disordered but fixed directions of the oscillating electric and the orthogonal magnetic field.",
-    "references": "[42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.]",
+    "references": "[42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [41, Singh et al., Single and dual band 77/95/110 GHz metamaterial absorbers on flexible polyimide substrate, http://aip.scitation.org/doi/10.1063/1.3672100, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with power absorption coefficient A; power reflection coefficient R; power transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. Attention: Coefficients may be named differently in literature.]",
     "nodeType": "designParameter"
+  },
+  {
+    "id": "79",
+    "parentIds": ["64"],
+    "title": "Backscattering by atm. aerosol particles and accumulated hydrometeors",
+    "decomBlock": "Signal propagation",
+    "description":"Backscattering of beam by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of backscattering by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
+    "references": "[64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "80",
+    "parentIds": ["1"],
+    "title": "Error in angle measurement",
+    "decomBlock": "Signal propagation",
+    "description":"Error in angle measurement regarding azimuth/zenith of emitted beam.",
+    "references": "[1, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "81",
+    "parentIds": ["82"],
+    "title": "Signal distance in atm. molecules volume",
+    "decomBlock": "Signal propagation",
+    "description":"Distance of electromagnetic wave travelling through volume of molecules in atmosphere.",
+    "references": "[82, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "82",
+    "parentIds": ["63"],
+    "title": "Absorption by atm. molecules",
+    "decomBlock": "Signal propagation",
+    "description":"Absorption of electromganetic wave by molecules in atmosphere. Hence, converting incoming engery into kinetic and thermal energy within molecules.",
+    "references": "[63, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Oxygen being mentioned here as being highly absorbing regarding Radar wavelengths at 60GHz.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "83",
+    "parentIds": ["84"],
+    "title": "Non-periodic measurement cycle",
+    "decomBlock": "Reception",
+    "description":"Measurement cycles being non-periodic in a manner that the signal is cut off after a complete cycle without continuously matching the signal of the following cycle.",
+    "references": "[84, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.373.]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "84",
+    "parentIds": ["6"],
+    "title": "Leakage error",
+    "decomBlock": "Pre-processing",
+    "description":"Undesired artefacts after FFT due to frequency incontinuities when processing new measurement cycle. Avoidable by so called windowing.",
+    "references": "[6, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference on 'False positive detection' here; further research recommended; p.373.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "85",
+    "parentIds": ["86"],
+    "title": "Linearity error in FM method",
+    "decomBlock": "Emission",
+    "description":"Non-linearities in modulation of transmitted signal.",
+    "references": "[86, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.373.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "86",
+    "parentIds": ["87"],
+    "title": "Deviation from ideal frequency modulation",
+    "decomBlock": "Emission",
+    "description":"Frequency modulated signal not matching the desired signal.",
+    "references": "[87, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "87",
+    "parentIds": ["0"],
+    "title": "Separation error of dynamic threshold",
+    "decomBlock": "Pre-processing",
+    "description":"",
+    "references": "[0, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "88",
+    "parentIds": ["87"],
+    "title": "Short mutual distance between two objects",
+    "decomBlock": "Signal propagation",
+    "description":"Short mutual distance of objects being the consequence of objects moving side by side or close positioned objects in general.",
+    "references": "[87, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "89",
+    "parentIds": ["25"],
+    "title": "Contamination by ice",
+    "decomBlock": "Emission",
+    "description":"Layer of ice occuring on sensor.",
+    "references": "[25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "90",
+    "parentIds": ["75", "25"],
+    "title": "Contamination by water",
+    "decomBlock": "Emission",
+    "description":"Layer of water occuring on sensor.",
+    "references": "[75, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.] [25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "91",
+    "parentIds": ["11"],
+    "title": "No sufficient sensor data",
+    "decomBlock": "Object identification",
+    "description":"No sufficient sensor data for further calculations and, thus, to choose correct object.",
+    "references": "[11, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "92",
+    "parentIds": ["11"],
+    "title": "Error in classification algorithm",
+    "decomBlock": "Object identification",
+    "description":"Non-optimal classification algorithm in terms of errors in classification decisions, while receiving sufficient sensor data for e.g. feature calculations. Independent of machine learned or manually implemented classification algorithm.",
+    "references": "[11, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "93",
+    "parentIds": ["92"],
+    "title": "Choice and weighting of features for classification",
+    "decomBlock": "Object identification",
+    "description":"Choice and weighting of features that are used for classification in classification algorithm. Independent of machine learned or manually implemented classification algorithm.",
+    "references": "[92, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "94",
+    "parentIds": ["92"],
+    "title": "Error in calculated features",
+    "decomBlock": "Object identification",
+    "description":"Potential errors in terms of deviations from ground truth, cointained in calculated features which are passed on to further calculation steps.",
+    "references": "[92, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "95",
+    "parentIds": ["94"],
+    "title": "Object shape error",
+    "decomBlock": "Object identification",
+    "description":"Error in estimated object shape.",
+    "references": "[94, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Object shape being included in so called shape factor here; which parameterizes the difference of the objects shape compared to an ideal ellipse. Shape factor being declared as feature m2; here.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "96",
+    "parentIds": ["94"],
+    "title": "Object size error",
+    "decomBlock": "Object identification",
+    "description":"Error in estimated object size.",
+    "references": "[94, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Object size being included in so called size factor here; which describes the square root of the distance-compensated number of resolution cells of an object. Size factor being declared as feature m1; here.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "97",
+    "parentIds": ["15"],
+    "title": "Error in ego velocity compensation",
+    "decomBlock": "Object identification",
+    "description":"Error in compensation of velocity of ego vehicle when calculating object velocity.",
+    "references": "[15, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum offset; mentioned here as a potential consequence.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "98",
+    "parentIds": ["15"],
+    "title": "Additional assignment of resolution cells from noisy surroundings to object",
+    "decomBlock": "Object identification",
+    "description":"Resolution cells from noisy surroundings being erroneously assigned to object due to wrong segmentation.",
+    "references": "[15, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum fractions with higher velocities than possible for static objects; mentioned here as a potential consequence.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "99",
+    "parentIds": ["64"],
+    "title": "Internal sensor noise",
+    "decomBlock": "Reception",
+    "description":"Noise induced by Radar sensor itself.",
+    "references": "[64, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] ",
+    "nodeType": "effect"
+  },
+  {
+    "id": "100",
+    "parentIds": ["70"],
+    "title": "Design of AD-Converter",
+    "decomBlock": "Reception",
+    "description":"Design of installed AD-Converter.",
+    "references": "[70, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] ",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "101",
+    "parentIds": ["69"],
+    "title": "Design of amplifier",
+    "decomBlock": "Reception",
+    "description":"Design of installed amplifier/s.",
+    "references": "[69, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] ",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "102",
+    "parentIds": ["67"],
+    "title": "Active electrical circuits in reception unit",
+    "decomBlock": "Reception",
+    "description":"Unity of installed and active electrical circuits in reception unit.",
+    "references": "[67, Scheer, The Radar Range Equation, https://digital-library.theiet.org/content/books/10.1049/sbra021e_ch2, p.64-65.] ",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "103",
+    "parentIds": ["68"],
+    "title": "Design of Phase Locked Loop (PLL)",
+    "decomBlock": "Reception",
+    "description":"Design of installed Phase Locked Loop (PLL) which is generating/controlling the phase of a desired output signal.",
+    "references": "[68, Gerstmair et al., Phase Noise Monitoring in Cascaded Systems for High-Resolution Automotive Radar Sensors, https://ieeexplore.ieee.org/document/9463780/]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "104",
+    "parentIds": ["67"],
+    "title": "Receiver bandwidth",
+    "decomBlock": "Reception",
+    "description":"Receiver bandwidth being considered to determine the “range of frequencies capable of being detected by the radar’s receiver” [Scheer, J. A. (2010). The Radar Range Equation. In Principles of Modern Radar: Basic principles (S. 59–86). Institution of Engineering and Technology. https://doi.org/10.1049/SBRA021E_ch2].",
+    "references": "[67, Scheer, The Radar Range Equation, https://digital-library.theiet.org/content/books/10.1049/sbra021e_ch2, p.64-65.]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "105",
+    "parentIds": ["67"],
+    "title": "System temperature",
+    "decomBlock": "Reception",
+    "description":"Temperature of Radar sensor, specifically of installed components.",
+    "references": "[67, Scheer, The Radar Range Equation, https://digital-library.theiet.org/content/books/10.1049/sbra021e_ch2, p.64-65.]",
+    "nodeType": "systemIndependent"
   }
 ]
