@@ -76,7 +76,7 @@
     "parentIds": ["12"],
     "title": "False negative features",
     "decomBlock": "Feature identification",
-    "description": "",
+    "description": "An object specific feature present in ground truth is not being identified as one.",
     "references": "[12, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "effect"
   },
@@ -190,29 +190,29 @@
   },
   {
     "id": "21",
-    "parentIds": ["5"],
+    "parentIds": ["17", "5"],
     "title": "Velocity resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of velocity measurement after FFT.",
-    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "references": "[17, Buehren, Simulation of Automotive Radar Target Lists considering Clutter and Limited Resolution, https://www.iss.uni-stuttgart.de/forschung/publikationen/buehren_irs2007.pdf, Resolution of receiver being mentioned here; further research regarding 'velocity resolution' is recommended.] [5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "designParameter"
   },
   {
     "id": "22",
-    "parentIds": ["5"],
+    "parentIds": ["17", "5", "95", "96"],
     "title": "Range resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of range measurement after FFT.",
-    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "references": "[17, Buehren, Simulation of Automotive Radar Target Lists considering Clutter and Limited Resolution, https://www.iss.uni-stuttgart.de/forschung/publikationen/buehren_irs2007.pdf, Resolution of receiver being mentioned here; further research regarding 'range resolution' is recommended.] [5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'. Range resolution not being directly mentioned but; here within the scope of PerCollECT; assumed to be included in mentioned distance compensation.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'. Number 'n' of resolution cells; here within the scope of PerCollECT; assumed to be dependent of the distance between sensor and object; similar to explanation in chapter 'The size of an object' within presented literature. Regarding this assumption; the number 'n' of resolution cells also assumed to be dependent of the range resolution.]",
     "nodeType": "designParameter"
   },
   {
     "id": "23",
-    "parentIds": ["5", "95", "96"],
+    "parentIds": ["17", "5", "95", "96"],
     "title": "Angle resolution",
     "decomBlock": "Pre-processing",
     "description":"Resolution of angle measurement after FFT.",
-    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'.]",
+    "references": "[17, Buehren, Simulation of Automotive Radar Target Lists considering Clutter and Limited Resolution, https://www.iss.uni-stuttgart.de/forschung/publikationen/buehren_irs2007.pdf, Resolution of receiver being mentioned here; further research regarding 'angle resolution' is recommended.] [5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'.]",
     "nodeType": "designParameter"
   },
   {
@@ -232,15 +232,6 @@
     "description": "Electromagnetic wave which is reflected by object of interest contains low radiation power when returning to the receiving antenna.",
     "references": "[17, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
-  },
-  {
-    "id": "26",
-    "parentIds": ["17"],
-    "title": "Resolution of receiver",
-    "decomBlock": "Reception",
-    "description": "",
-    "references": "[17, Buehren, Simulation of Automotive Radar Target Lists considering Clutter and Limited Resolution, https://www.iss.uni-stuttgart.de/forschung/publikationen/buehren_irs2007.pdf]",
-    "nodeType": "designParameter"
   },
   {
     "id": "27",
@@ -328,7 +319,7 @@
     "parentIds": ["32"],
     "title": "Abscence of other mirroring surfaces",
     "decomBlock": "Signal propagation",
-    "description":"",
+    "description":"Mirroring surfaces in the surrounding of the ego vehicle that reflect radiation in a way that e.g. occluded objects still get radiated via multi path propagation, being not present.",
     "references": "[32, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
     "nodeType": "systemIndependent"
   },
@@ -337,7 +328,7 @@
     "parentIds": ["33","34"],
     "title": "Number concentration of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Number concentration of atmospheric aerosol particles in regular automotive Radar surroundings is high enough to interact measurable with electromagnetic wave. Number concentration of accumulated hydrometeors depending on environmental influences.",
+    "description":"Number concentration of atmospheric aerosol particles in regular automotive Radar surroundings is high enough to interact measurable with electromagnetic wave. Number concentration of accumulated hydrometeors depending on environmental influences like rain or road spray.",
     "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "systemIndependent"
   },
@@ -355,7 +346,7 @@
     "parentIds": ["33","34"],
     "title": "Size of atm. particles",
     "decomBlock": "Signal propagation",
-    "description":"Geometric size of atmospheric particles.",
+    "description":"Geometric size of atmospheric particles depending on e.g. rain drop size distribution or road spray by other vehicles.",
     "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
     "nodeType": "systemIndependent"
   },
@@ -469,11 +460,11 @@
   },
   {
     "id": "52",
-    "parentIds": ["56", "5", "61"],
+    "parentIds": ["56", "5", "0"],
     "title": "Object too close to sensor",
     "decomBlock": "Signal propagation",
     "description":"Object being located too close from sensor.",
-    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.] [5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [61, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.] [5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [0, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting positions giving rise to 'blind ranges'; a limited sensor field of view; at close range due to the bonnet screening the radar beam. Under these circumstances an object too close to the sensor may not be detected.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -482,7 +473,7 @@
     "title": "Distance between sensor and object",
     "decomBlock": "Signal propagation",
     "description":"Spatial distance between Radar sensor and object.",
-    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [43, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [81, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'. Number 'n' of resolution cells assumed to be dependent of the distance between sensor and object; here; similar to explanation in chapter 'The size of an object' within presented literature.]",
+    "references": "[52, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [43, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [81, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [96, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The size of an object'.] [95, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, See 'The shape of an object'. Number 'n' of resolution cells; here within the scope of PerCollECT; assumed to be dependent of the distance between sensor and object; similar to explanation in chapter 'The size of an object' within presented literature. Regarding this assumption; the number 'n' of resolution cells also assumed to be dependent of the range resolution.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -508,7 +499,7 @@
     "parentIds": ["18"],
     "title": "Sampling rate of sensor",
     "decomBlock": "Reception",
-    "description":"",
+    "description":"Sampling rate of AD-Converter within sensor.",
     "references": "[18, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.354.]",
     "nodeType": "designParameter"
   },
@@ -526,7 +517,7 @@
     "parentIds": ["25"],
     "title": "Contamination by road dirt",
     "decomBlock": "Emission",
-    "description":"Layer of road dirt occuring on sensor.",
+    "description":"Layer of road dirt occuring on sensor surface.",
     "references": "[25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
     "nodeType": "systemIndependent"
   },
@@ -648,15 +639,6 @@
     "nodeType": "effect"
   },
   {
-    "id": "74",
-    "parentIds": ["37"],
-    "title": "Spray from road surface stirred up by vehicles",
-    "decomBlock": "Signal propagation",
-    "description":"Vehicles close by may create stirred up spray when driving over watery surfaces.",
-    "references": "[37, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.]",
-    "nodeType": "systemIndependent"
-  },
-  {
     "id": "75",
     "parentIds": ["80"],
     "title": "Lens effect by water layer on radome",
@@ -732,8 +714,8 @@
     "id": "83",
     "parentIds": ["84"],
     "title": "Non-periodic measurement cycle",
-    "decomBlock": "Reception",
-    "description":"Measurement cycles being non-periodic in a manner that the signal is cut off after a complete cycle without continuously matching the signal of the following cycle.",
+    "decomBlock": "Pre-processing",
+    "description":"Measurement cycles being non-periodic in a manner that the digital signal is cut off after a complete cycle without continuously matching the signal of the following cycle.",
     "references": "[84, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.373.]",
     "nodeType": "designParameter"
   },
@@ -757,29 +739,20 @@
   },
   {
     "id": "86",
-    "parentIds": ["87"],
+    "parentIds": ["5"],
     "title": "Deviation from ideal frequency modulation",
     "decomBlock": "Emission",
     "description":"Frequency modulated signal not matching the desired signal.",
-    "references": "[87, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
-    "nodeType": "effect"
-  },
-  {
-    "id": "87",
-    "parentIds": ["0"],
-    "title": "Separation error of dynamic threshold",
-    "decomBlock": "Pre-processing",
-    "description":"",
-    "references": "[0, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
+    "references": "[5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
     "nodeType": "effect"
   },
   {
     "id": "88",
-    "parentIds": ["87"],
+    "parentIds": ["5"],
     "title": "Short mutual distance between two objects",
     "decomBlock": "Signal propagation",
     "description":"Short mutual distance of objects being the consequence of objects moving side by side or close positioned objects in general.",
-    "references": "[87, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
+    "references": "[5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, No direct reference here; further research recommended; p.373.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -787,7 +760,7 @@
     "parentIds": ["25"],
     "title": "Contamination by ice",
     "decomBlock": "Emission",
-    "description":"Layer of ice occuring on sensor.",
+    "description":"Layer of ice occuring on sensor surface.",
     "references": "[25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
     "nodeType": "systemIndependent"
   },
@@ -796,7 +769,7 @@
     "parentIds": ["75", "25"],
     "title": "Contamination by water",
     "decomBlock": "Emission",
-    "description":"Layer of water occuring on sensor.",
+    "description":"Layer of water occuring on sensor surface.",
     "references": "[75, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330.] [25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
     "nodeType": "systemIndependent"
   },
@@ -807,7 +780,7 @@
     "decomBlock": "Object identification",
     "description":"No sufficient sensor data for further calculations and, thus, to choose correct object.",
     "references": "[11, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "designParameter"
   },
   {
     "id": "92",
