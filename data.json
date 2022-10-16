@@ -64,11 +64,11 @@
   },
   {
     "id": "7",
-    "parentIds": ["33","34","40","41","42","22","25", "72", "82"],
+    "parentIds": ["33","34","40","41","42","22","25", "72", "82", "106"],
     "title": "Emitter wavelength",
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
-    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [33, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [82, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [33, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution] [25, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.331.] [25, Thurn et al., Noise in Homodyne FMCW radar systems and its effects on ranging precision, http://ieeexplore.ieee.org/document/6697654/] [72, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.371.] [42, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [40, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.376.] [82, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001] [106, Chen et al., Micro-doppler effect in radar: phenomenon; model; and simulation study, http://ieeexplore.ieee.org/document/1603402/]",
     "nodeType": "designParameter"
   },
   {
@@ -906,6 +906,42 @@
     "decomBlock": "Reception",
     "description":"Temperature of Radar sensor, specifically of installed components.",
     "references": "[67, Scheer, The Radar Range Equation, https://digital-library.theiet.org/content/books/10.1049/sbra021e_ch2, p.64-65.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "106",
+    "parentIds": ["0"],
+    "title": "Overlapping micro-doppler signals",
+    "decomBlock": "Reception",
+    "description":"“Sideband Doppler frequency shifts about the Doppler shifted central carrier frequency” [Chen, V., Fayin Li, Shen-Shyang Ho & Wechsler, H. (2006, Januar). Micro-doppler effect in radar: phenomenon, model, and simulation study. IEEE Transactions on Aerospace and Electronic Systems, 42(1), 2–21. https://doi.org/10.1109/taes.2006.1603402].",
+    "references": "[0, Stankovic et al., Micro-Doppler Removal in the Radar Imaging Analysis, http://ieeexplore.ieee.org/document/6494410/, Micro-doppler may cover the rigid body and make it difficult to detect.] [0, Stankovic et al., Compressive Sensing Based Separation of Nonstationary and Stationary Signals Overlapping in Time-Frequency, http://ieeexplore.ieee.org/document/6553137/, Micro-doppler effects can obscure rigid body points; rendering the radar image highly cluttered and unreadable.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "107",
+    "parentIds": ["106"],
+    "title": "Vibration of object part",
+    "decomBlock": "Signal propagation",
+    "description":"Mechanical oscillations of object part.",
+    "references": "[106, Chen et al., Micro-doppler effect in radar: phenomenon; model; and simulation study, http://ieeexplore.ieee.org/document/1603402/, Vibrating and/or rotating irradiated object parts inducing sideband doppler frequency shifts of reflected signal. Extent of these so called micro-doppler shifts depending on carrier frequency; vibration or rotation rate; dimensions and sensor-relative orientation of rotating parts; displacement of vibrations; sensor-relative direction of vibrations.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "108",
+    "parentIds": ["106"],
+    "title": "Rotation of object part",
+    "decomBlock": "Signal propagation",
+    "description":"Rotating movements of object part.",
+    "references": "[106, Chen et al., Micro-doppler effect in radar: phenomenon; model; and simulation study, http://ieeexplore.ieee.org/document/1603402/, Vibrating and/or rotating irradiated object parts inducing sideband doppler frequency shifts of reflected signal. Extent of these so called micro-doppler shifts depending on carrier frequency; vibration or rotation rate; dimensions and sensor-relative orientation of rotating parts; displacement of vibrations; sensor-relative direction of vibrations.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "109",
+    "parentIds": ["106"],
+    "title": "Vibration of Radar sensor",
+    "decomBlock": "Reception",
+    "description":"Mechanical oscillations of installed Radar sensor.",
+    "references": "[106, Chen et al., Micro-doppler effect in radar: phenomenon; model; and simulation study, http://ieeexplore.ieee.org/document/1603402/, Vibrating sensor inducing micro-doppler shifts; analogous to 'Vibration of object part'; see node id 107. Extent of micro-doppler shifts depending on carrier frequency; vibration rate; displacement of vibrations; direction of vibrations relative to objects.]",
     "nodeType": "systemIndependent"
   }
 ]
