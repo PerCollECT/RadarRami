@@ -307,11 +307,11 @@
   },
   {
     "id": "35",
-    "parentIds": ["32", "61"],
+    "parentIds": ["32"],
     "title": "Occlusion by object parts",
     "decomBlock": "Signal propagation",
     "description":"Object parts located in front of other object parts preventing reception of power by receiving antenna.",
-    "references": "[32, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298] [61, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001]",
+    "references": "[32, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298]",
     "nodeType": "effect"
   },
   {
@@ -446,7 +446,7 @@
     "title": "Multi-path reflection",
     "decomBlock": "Signal propagation",
     "description":"The sensor signal is reflected by multiple object parts within the scene, including road surface.",
-    "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections] [73, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330-331.]",
+    "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections.][2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections.][6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections.] [73, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.330-331.]",
     "nodeType": "effect"
   },
   {
@@ -460,11 +460,11 @@
   },
   {
     "id": "52",
-    "parentIds": ["56", "5", "0"],
+    "parentIds": ["56", "5"],
     "title": "Object too close to sensor",
     "decomBlock": "Signal propagation",
-    "description":"Object being located too close from sensor.",
-    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.] [5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [0, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting positions giving rise to 'blind ranges'; a limited sensor field of view; at close range due to the bonnet screening the radar beam. Under these circumstances an object too close to the sensor may not be detected.]",
+    "description":"Object being located too close to sensor.",
+    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.] [5, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -482,15 +482,15 @@
     "title": "Pulse length of pulsed Radar signal",
     "decomBlock": "Emission",
     "description":"Emitted pulse length of pulsed Radar signal.",
-    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
+    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.]",
     "nodeType": "designParameter"
   },
   {
     "id": "56",
     "parentIds": ["1", "0"],
-    "title": "Range in which distance cannot be correctly determined or be determined at all",
+    "title": "Range in which distance cannot be correctly determined, respectively no detection at all",
     "decomBlock": "Signal propagation",
-    "description":"Range, starting from sensor and corresponding approximately to the pulse length, in which the distance cannot be correctly determined. No detection at all under ca. 25% of pulse length.",
+    "description":"Range, starting from sensor and corresponding approximately to the pulse length, in which the distance cannot be correctly determined in case of pulsed Radar using the same antenna for transmitting and receiving. No detection at all under ca. 25% of pulse length.",
     "references": "[1, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.] [0, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.367-368.]",
     "nodeType": "effect"
   },
@@ -509,7 +509,7 @@
     "title": "Radar mounting position",
     "decomBlock": "Emission",
     "description":"Radar mounting position in ego vehicle.",
-    "references": "[50, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting position exacerbating multi-path effects.][60, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting position exacerbating contamination of sensor by road dirt.][35, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Radar beam being screened by bonnet of ego vehicle.]",
+    "references": "[50, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting position exacerbating multi-path effects.][60, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting position exacerbating contamination of sensor by road dirt.][35, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting positions giving rise to 'blind ranges' at close range due to the bonnet screening the radar beam. Under these circumstances an object too close to the ego vehicle may be located in the blind range as being occluded by the bonnet.]",
     "nodeType": "designParameter"
   },
   {
@@ -520,15 +520,6 @@
     "description":"Layer of road dirt occuring on sensor surface.",
     "references": "[25, Petrov et al., Statistical Approach for Automotive Radar Self-Diagnostics, https://ieeexplore.ieee.org/abstract/document/8904502]",
     "nodeType": "systemIndependent"
-  },
-  {
-    "id": "61",
-    "parentIds": ["0"],
-    "title": "Limited sensor field of view",
-    "decomBlock": "Emission",
-    "description":"Field of view of sensor being spatially limited.",
-    "references": "[0, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Blind ranges being referred to missing detectable areas; here.]",
-    "nodeType": "effect"
   },
   {
     "id": "62",
@@ -943,5 +934,23 @@
     "description":"Mechanical oscillations of installed Radar sensor.",
     "references": "[106, Chen et al., Micro-doppler effect in radar: phenomenon; model; and simulation study, http://ieeexplore.ieee.org/document/1603402/, Vibrating sensor inducing micro-doppler shifts; analogous to 'Vibration of object part'; see node id 107. Extent of micro-doppler shifts depending on carrier frequency; vibration rate; displacement of vibrations; direction of vibrations relative to objects.]",
     "nodeType": "systemIndependent"
+  },
+  {
+    "id": "110",
+    "parentIds": ["35"],
+    "title": "Object too close to ego vehicle",
+    "decomBlock": "Signal propagation",
+    "description":"Object being located too close to ego vehicle.",
+    "references": "[35, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Low mounting positions giving rise to 'blind ranges' at close range due to the bonnet screening the radar beam. Under these circumstances an object too close to the ego vehicle may be located in the blind range as being occluded by the bonnet.]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "111",
+    "parentIds": ["56"],
+    "title": "Same antenna paths for transmitting and receiving",
+    "decomBlock": "Emission",
+    "description":"Usage of the same antenna paths in terms of transmitting and receiving.",
+    "references": "[56, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, Regarding Pulse Radar Systems which make use of the same antenna paths in terms of transmitting and receiving. No measurement possible before decay of transmitted pulse; here. See p.367-368.]",
+    "nodeType": "designParameter"
   }
 ]
