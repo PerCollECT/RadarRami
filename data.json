@@ -523,11 +523,11 @@
   },
   {
     "id": "62",
-    "parentIds": ["6", "15"],
+    "parentIds": ["6", "2"],
     "title": "Antenna diagram sidelobes",
     "decomBlock": "Emission",
     "description":"Three-dimensional distribution of amplification and attenuation of transmitted and received signal, typically occuring as bulge-like shapes being referred as lobes. Lobes next to a characteristic central main lobe being referred as side lobes.",
-    "references": "[6, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Side lobe detections being referred to false positive detections; here.] [15, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum fractions with higher velocities for static objects than they should have; mentioned here as a potential consequence.]",
+    "references": "[6, Hoare, System requirements for automotive radar antennas, https://digital-library.theiet.org/content/conferences/10.1049/ic_20000001, Side lobe detections being referred to false positive detections; here.] [2, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum fractions with higher velocities for static objects than they should have; mentioned here as a potential consequence.]",
     "nodeType": "effect"
   },
   {
@@ -550,11 +550,11 @@
   },
   {
     "id": "65",
-    "parentIds": ["64"],
+    "parentIds": ["64", "6"],
     "title": "Radar crosstalk",
     "decomBlock": "Signal propagation",
     "description":"Crosstalk being a mutual irradiation of receivers by emitted radiation of two seperately installed Radar sensors in different vehicles.",
-    "references": "[64, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.378.]",
+    "references": "[64, Cardillo and Caddemi, A novel approach for crosstalk minimisation in frequency modulated continuous wave radars, https://onlinelibrary.wiley.com/doi/10.1049/el.2017.2800] [64, Winner, Automotive RADAR, http://link.springer.com/10.1007/978-3-319-12352-3_17, p.378.] [6, Goppelt et al., Automotive radar – investigation of mutual interference mechanisms, https://ars.copernicus.org/articles/8/55/2010/]",
     "nodeType": "effect"
   },
   {
@@ -819,21 +819,12 @@
     "nodeType": "effect"
   },
   {
-    "id": "97",
-    "parentIds": ["15"],
-    "title": "Error in ego velocity compensation",
-    "decomBlock": "Object identification",
-    "description":"Error in compensation of velocity of ego vehicle when calculating object velocity.",
-    "references": "[15, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum offset; mentioned here as a potential consequence.]",
-    "nodeType": "effect"
-  },
-  {
     "id": "98",
-    "parentIds": ["15"],
+    "parentIds": ["2"],
     "title": "Additional assignment of resolution cells from noisy surroundings to object",
-    "decomBlock": "Object identification",
+    "decomBlock": "Pre-processing",
     "description":"Resolution cells from noisy surroundings being erroneously assigned to object due to wrong segmentation.",
-    "references": "[15, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum fractions with higher velocities than possible for static objects; mentioned here as a potential consequence.]",
+    "references": "[2, Bartsch et al., Pedestrian recognition using automotive radar sensors, https://ars.copernicus.org/articles/10/45/2012/, Doppler spectrum fractions with higher velocities than possible for static objects; mentioned here as a potential consequence.]",
     "nodeType": "effect"
   },
   {
